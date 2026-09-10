@@ -1,0 +1,2539 @@
+{
+  "meta": {
+    "title": "Clacton-on-Sea visitor guide expansion research",
+    "areas_covered": [
+      "Clacton",
+      "Little Clacton",
+      "Holland-on-Sea",
+      "Jaywick",
+      "St Osyth",
+      "Point Clear",
+      "Other Tendring"
+    ],
+    "generated_utc": "2026-09-10T18:06:09Z",
+    "accessed_note": "2026-09-10",
+    "method": "Official/tourism/council/EWT/company/Wikipedia-cited sources only; contested claims cross-checked; no invented places or YouTube IDs.",
+    "drop_candidates": [
+      "Rosie's Kabin — confirm exact address",
+      "Beach Haven Cafe — confirm postcode",
+      "Salts by the Sea — confirm operator hours page",
+      "Blacksmith's Arms / Kings Arms — confirm current kitchen hours",
+      "East Essex Aviation Museum — confirm seasonal hours via social",
+      "Jaywick Sunspot toilets — pin exact entrance",
+      "Colne Point — restricted; list as caution not casual attraction",
+      "YouTube LRIuaCbaN-I — medium confidence cross-link only"
+    ]
+  },
+  "attractions_visit": [
+    {
+      "id": "clacton-pier",
+      "name": "Clacton Pier",
+      "area": "Clacton",
+      "category_hint": "pier_amusements",
+      "tagline": "Pleasure pier with rides, bowling and all-weather fun",
+      "description": "Clacton Pier opened 27 July 1871 as the first public building of the new seaside resort. It offers rides including a 110ft observation wheel, ten-pin bowling, soft play, adventure golf, arcade and Jurassic Pier 4D, plus food outlets. Operator published a large 2026 events programme.",
+      "highlights": [
+        "Rides & Wheel Experience",
+        "Bowling / soft play / golf",
+        "2026 events & fireworks"
+      ],
+      "location_address": "1 North Sea, Clacton-on-Sea, CO15 1QX",
+      "coords": {
+        "lat": 51.7855,
+        "lng": 1.1559
+      },
+      "official_url": "https://www.clactonpier.co.uk/",
+      "sources": [
+        {
+          "title": "Clacton Pier",
+          "url": "https://www.clactonpier.co.uk/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Wikipedia Clacton Pier",
+          "url": "https://en.wikipedia.org/wiki/Clacton_Pier",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Clacton Pier Essex",
+        "Clacton Pier wheel Geograph"
+      ]
+    },
+    {
+      "id": "west-cliff-theatre",
+      "name": "West Cliff Theatre",
+      "area": "Clacton",
+      "category_hint": "theatre",
+      "tagline": "Traditional seaside theatre",
+      "description": "Tower Road theatre hosting variety, tributes, comedy and summer season. Listed on Visit Essex with shows into 2026.",
+      "highlights": [
+        "Summer season",
+        "Touring shows",
+        "Tower Road"
+      ],
+      "location_address": "Tower Road, Clacton-on-Sea, CO15 1LE",
+      "coords": {
+        "lat": 51.787,
+        "lng": 1.1495
+      },
+      "official_url": "https://www.westcliffclacton.co.uk/",
+      "sources": [
+        {
+          "title": "Visit Essex Clacton",
+          "url": "https://www.visitessex.com/explore/coastal-destinations/clacton-on-sea",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Essex Sunshine Coast West Cliff",
+          "url": "https://essex-sunshine-coast.org.uk/places/west-cliff-theatre/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "West Cliff Theatre"
+      ]
+    },
+    {
+      "id": "princes-theatre",
+      "name": "Princes Theatre",
+      "area": "Clacton",
+      "category_hint": "theatre",
+      "tagline": "820-seat theatre in Grade II Town Hall",
+      "description": "Opened 14 April 1931 by Prince Arthur of Connaught inside Clacton Town Hall (Sir A Brumwell Thomas). Capacity now 820; 150+ shows/events yearly per venue history.",
+      "highlights": [
+        "Grade II Town Hall",
+        "Town centre",
+        "Touring acts"
+      ],
+      "location_address": "Clacton Town Hall, Station Road, CO15 1SE",
+      "coords": {
+        "lat": 51.7915,
+        "lng": 1.1538
+      },
+      "official_url": "https://princestheatre.co.uk/",
+      "sources": [
+        {
+          "title": "Princes Theatre history",
+          "url": "https://princestheatre.co.uk/our-history",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Princes Theatre"
+      ]
+    },
+    {
+      "id": "clacton-museum",
+      "name": "Clacton Museum",
+      "area": "Clacton",
+      "category_hint": "museum",
+      "tagline": "Free local history museum above library",
+      "description": "Displays on resort since 1871, pier entertainment, Butlin's and Great Clacton. Discover Clacton: free; limited hours (Tue/Sat mornings at research time).",
+      "highlights": [
+        "Free entry",
+        "Seaside heritage",
+        "Library building"
+      ],
+      "location_address": "2nd Floor, Clacton Library, 96 Station Road, CO15 1SF",
+      "coords": {
+        "lat": 51.7912,
+        "lng": 1.153
+      },
+      "official_url": "https://discoverclacton.co.uk/place/clacton-museum/",
+      "sources": [
+        {
+          "title": "Discover Clacton Museum",
+          "url": "https://discoverclacton.co.uk/place/clacton-museum/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Very limited hours — confirm before visit.",
+      "photo_search_queries": [
+        "Clacton Museum"
+      ]
+    },
+    {
+      "id": "clacton-pavilion",
+      "name": "Clacton Pavilion",
+      "area": "Clacton",
+      "category_hint": "leisure_funpark",
+      "tagline": "Seafront fun park, bowling and dining",
+      "description": "Marine Parade East complex with fun park, bowling and restaurants. Outdoor hours weather-dependent per operator.",
+      "highlights": [
+        "Fun park",
+        "Bowling",
+        "Beside pier"
+      ],
+      "location_address": "Marine Parade East, CO15 1PT",
+      "coords": {
+        "lat": 51.7862,
+        "lng": 1.1568
+      },
+      "official_url": "https://clactonpavilion.co.uk/",
+      "sources": [
+        {
+          "title": "Pavilion contact",
+          "url": "https://clactonpavilion.co.uk/contact-us/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Fun park hours weather-governed.",
+      "photo_search_queries": [
+        "Clacton Pavilion"
+      ]
+    },
+    {
+      "id": "clacton-shopping-village",
+      "name": "Clacton Shopping Village",
+      "area": "Clacton",
+      "category_hint": "shopping_outlet",
+      "tagline": "Outlet-style shopping off A133",
+      "description": "Retail village on Stephenson Road West with brands and independents; free parking per operator site.",
+      "highlights": [
+        "Brands & independents",
+        "Free parking claim",
+        "A133 access"
+      ],
+      "location_address": "Stephenson Road West, CO15 4TL",
+      "coords": {
+        "lat": 51.8105,
+        "lng": 1.145
+      },
+      "official_url": "https://clactonshoppingvillage.com/",
+      "sources": [
+        {
+          "title": "Shopping Village",
+          "url": "https://clactonshoppingvillage.com/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Visit Essex",
+          "url": "https://www.visitessex.com/explore/coastal-destinations/clacton-on-sea",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Clacton Shopping Village"
+      ]
+    },
+    {
+      "id": "hastys-adventure-farm",
+      "name": "Hasty's Adventure Farm",
+      "area": "Clacton",
+      "category_hint": "family_farm_attraction",
+      "tagline": "Family farm park beside airfield",
+      "description": "Opened 2016 on West Road with animals, outdoor play and large undercover adventure zone. Bus 4/X76.",
+      "highlights": [
+        "Animals & play",
+        "Undercover zone",
+        "Next to airfield"
+      ],
+      "location_address": "West Road, CO15 1AG",
+      "coords": {
+        "lat": 51.7868,
+        "lng": 1.1285
+      },
+      "official_url": "https://www.hastys.co.uk/",
+      "sources": [
+        {
+          "title": "Hasty's",
+          "url": "https://www.hastys.co.uk/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Plan visit",
+          "url": "https://www.hastys.co.uk/plan-your-visit/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Hasty's Adventure Farm"
+      ]
+    },
+    {
+      "id": "clacton-airfield-aero-club",
+      "name": "Clacton Airfield / Aero Club",
+      "area": "Clacton",
+      "category_hint": "leisure_flights",
+      "tagline": "Grass airfield — trial lessons & pleasure flights",
+      "description": "Clacton Aero Club since 1988; pleasure flights and trial lessons. Unlicensed GA field used for training/recreation.",
+      "highlights": [
+        "Trial lessons",
+        "Coastal views",
+        "Beside Hasty's"
+      ],
+      "location_address": "West Road, CO15 1AG",
+      "coords": {
+        "lat": 51.786,
+        "lng": 1.126
+      },
+      "official_url": "https://www.clactonaeroclub.co.uk/",
+      "sources": [
+        {
+          "title": "Aero Club",
+          "url": "https://www.clactonaeroclub.co.uk/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Wikipedia Clacton Airport",
+          "url": "https://en.wikipedia.org/wiki/Clacton_Airport",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Flights weather-dependent; book ahead.",
+      "photo_search_queries": [
+        "Clacton Airfield / Aero Club"
+      ]
+    },
+    {
+      "id": "clacton-seafront-gardens",
+      "name": "Clacton Seafront Gardens",
+      "area": "Clacton",
+      "category_hint": "park_gardens",
+      "tagline": "Cliff-top gardens by the pier",
+      "description": "Laid out 1921, refurbished 1997; sunken/Mediterranean/rose gardens ~0.5ha SW of pier.",
+      "highlights": [
+        "Floral displays",
+        "Sea views",
+        "Promenade access"
+      ],
+      "location_address": "Seafront Gardens, CO15 1LP",
+      "coords": {
+        "lat": 51.7858,
+        "lng": 1.154
+      },
+      "official_url": "https://discoverclacton.co.uk/place/clacton-seafront-gardens/",
+      "sources": [
+        {
+          "title": "Discover gardens",
+          "url": "https://discoverclacton.co.uk/place/clacton-seafront-gardens/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Clacton Seafront Gardens"
+      ]
+    },
+    {
+      "id": "martello-bay-beach",
+      "name": "Martello Bay Beach",
+      "area": "Clacton",
+      "category_hint": "beach",
+      "tagline": "Award beach with seasonal lifeguards",
+      "description": "Marine Parade West sandy beach; TDC seasonal lifeguards (typically May half-term–summer hols weekends/holidays 10:30–17:30) and May–Sep dog ban on award area.",
+      "highlights": [
+        "Lifeguarded seasonal",
+        "Near RNLI",
+        "Dog ban May–Sep on award beach"
+      ],
+      "location_address": "Marine Parade West, CO15 1NW",
+      "coords": {
+        "lat": 51.7835,
+        "lng": 1.145
+      },
+      "official_url": "https://www.tendringdc.gov.uk/beaches/martello-bay-clacton-co15-1bn",
+      "sources": [
+        {
+          "title": "TDC Martello Bay",
+          "url": "https://www.tendringdc.gov.uk/beaches/martello-bay-clacton-co15-1bn",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Lifeguard cover staffing-dependent.",
+      "photo_search_queries": [
+        "Martello Bay Beach"
+      ]
+    },
+    {
+      "id": "holland-on-sea-beach",
+      "name": "Holland-on-Sea Beach & Promenade",
+      "area": "Holland-on-Sea",
+      "category_hint": "beach_promenade",
+      "tagline": "Quieter sandy beach and long promenade",
+      "description": "Discover Clacton recommends Holland for quieter beach and relatively dog-friendlier year-round outside mapped ban strips; TDC byelaws still ban dogs on specific Holland sections May–Sep.",
+      "highlights": [
+        "Long promenade",
+        "Esplanade cafes",
+        "Links to Holland Haven"
+      ],
+      "location_address": "Kings Parade / Esplanade, Holland-on-Sea",
+      "coords": {
+        "lat": 51.8005,
+        "lng": 1.19
+      },
+      "official_url": "https://discoverclacton.co.uk/plan-your-visit/",
+      "sources": [
+        {
+          "title": "Discover Clacton",
+          "url": "https://discoverclacton.co.uk/plan-your-visit/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "TDC dog bans",
+          "url": "https://www.tendringdc.gov.uk/content/bye-laws-and-animals-on-beaches",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Check signs for ban zones.",
+      "photo_search_queries": [
+        "Holland-on-Sea Beach & Promenade"
+      ]
+    },
+    {
+      "id": "jaywick-martello-tower",
+      "name": "Jaywick Martello Tower",
+      "area": "Jaywick",
+      "category_hint": "heritage_arts_venue",
+      "tagline": "Napoleonic Tower C as arts & heritage venue",
+      "description": "Grade II/scheduled Tower C (c.1808–1811); ECC renovated, opened 2005. Explore Essex: reopen 18 Feb 2026; term weekends / holiday Wed–Sun 10–16; £1 adult.",
+      "highlights": [
+        "History exhibition",
+        "Roof views",
+        "Martello Trail hub"
+      ],
+      "location_address": "The Promenade, Belsize Ave, Jaywick, CO15 2LF",
+      "coords": {
+        "lat": 51.7727,
+        "lng": 1.094
+      },
+      "official_url": "https://www.explore-essex.com/places-to-go/find-whats-near-me/jaywick-martello-tower",
+      "sources": [
+        {
+          "title": "Explore Essex JMT",
+          "url": "https://www.explore-essex.com/places-to-go/find-whats-near-me/jaywick-martello-tower",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jaywick_Martello_Tower",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Check staffing closures.",
+      "photo_search_queries": [
+        "Jaywick Martello Tower"
+      ]
+    },
+    {
+      "id": "jaywick-sands-beach",
+      "name": "Jaywick Sands Beach",
+      "area": "Jaywick",
+      "category_hint": "beach",
+      "tagline": "Sandy beach west of Clacton",
+      "description": "Promenade beach with Martello nearby; TDC parking at Tamarisk Way. Nearest toilets at Sunspot ~700m per July 2024 TDC cabinet report.",
+      "highlights": [
+        "Sandy beach",
+        "Near Martello",
+        "Promenade walks"
+      ],
+      "location_address": "Jaywick Sands",
+      "coords": {
+        "lat": 51.7735,
+        "lng": 1.1119
+      },
+      "official_url": "https://www.visitjaywicksands.com/see-and-do",
+      "sources": [
+        {
+          "title": "Visit Jaywick Sands",
+          "url": "https://www.visitjaywicksands.com/see-and-do",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Toilets not at waterline.",
+      "photo_search_queries": [
+        "Jaywick Sands Beach"
+      ]
+    },
+    {
+      "id": "st-osyth-priory-tours",
+      "name": "St Osyth Priory (guided tours)",
+      "area": "St Osyth",
+      "category_hint": "heritage_estate",
+      "tagline": "Medieval abbey estate via pre-booked tours",
+      "description": "Founded c.1121 Augustinian house; Grade I complex. Public via Priory & Parish Trust seasonal guided walking/trailer/nature tours — not free roaming.",
+      "highlights": [
+        "Gatehouse",
+        "Pre-booked tours",
+        "Large estate"
+      ],
+      "location_address": "Education Centre, Colchester Road, St Osyth, CO16 8HA",
+      "coords": {
+        "lat": 51.7992,
+        "lng": 1.0749
+      },
+      "official_url": "https://www.stosythprioryandparishtrust.org/visit/",
+      "sources": [
+        {
+          "title": "Priory Trust visit",
+          "url": "https://www.stosythprioryandparishtrust.org/visit/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Wikipedia Priory",
+          "url": "https://en.wikipedia.org/wiki/St_Osyth%27s_Priory",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Book tours; seasonal.",
+      "photo_search_queries": [
+        "St Osyth Priory (guided tours)"
+      ]
+    },
+    {
+      "id": "st-osyth-museum",
+      "name": "St Osyth Museum",
+      "area": "St Osyth",
+      "category_hint": "museum",
+      "tagline": "Village museum behind the wall",
+      "description": "Sat–Sun 12:00–16:00 Easter–end Oct at Education Centre shared with Priory tours.",
+      "highlights": [
+        "Village history",
+        "Weekend seasonal",
+        "Near Kings Arms"
+      ],
+      "location_address": "Behind the Wall, Colchester Road, CO16 8HA",
+      "coords": {
+        "lat": 51.7985,
+        "lng": 1.0775
+      },
+      "official_url": "https://www.stosythmuseum.co.uk/",
+      "sources": [
+        {
+          "title": "St Osyth Museum",
+          "url": "https://www.stosythmuseum.co.uk/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "St Osyth Museum"
+      ]
+    },
+    {
+      "id": "east-essex-aviation-museum",
+      "name": "East Essex Aviation Society & Museum",
+      "area": "Point Clear",
+      "category_hint": "museum_martello",
+      "tagline": "WWII aviation museum in Martello Tower",
+      "description": "In Point Clear Martello since 1986; P-51 Mustang remains from 13 Jan 1945 ditching. Typical hours Apr–Oct Sun 10–14; Jun–Sep also Wed 10–14; donations.",
+      "highlights": [
+        "Martello setting",
+        "P-51 display",
+        "Donation entry"
+      ],
+      "location_address": "Martello Tower, Point Clear, CO16 8LW",
+      "coords": {
+        "lat": 51.783,
+        "lng": 1.055
+      },
+      "official_url": "http://www.eastessexaviationsociety.org/",
+      "sources": [
+        {
+          "title": "Air Museum Network",
+          "url": "https://airmuseumnetwork.com/directory/listing/east-essex-aviation-society-museum",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "medium",
+      "notes_uncertainty": "Confirm hours on social; postcodes vary in directories.",
+      "photo_search_queries": [
+        "East Essex Aviation Society & Museum"
+      ]
+    },
+    {
+      "id": "st-james-church-little-clacton",
+      "name": "St James' Church, Little Clacton",
+      "area": "Little Clacton",
+      "category_hint": "historic_church",
+      "tagline": "12th-century parish church",
+      "description": "Norman-origin church noted by parish council and Essex Sunshine Coast; walk start point.",
+      "highlights": [
+        "Norman fabric",
+        "Village walks",
+        "Heritage landmark"
+      ],
+      "location_address": "Little Clacton, Essex",
+      "coords": {
+        "lat": 51.825,
+        "lng": 1.145
+      },
+      "official_url": "https://www.littleclactonparishcouncil.gov.uk/little-clacton",
+      "sources": [
+        {
+          "title": "Parish council",
+          "url": "https://www.littleclactonparishcouncil.gov.uk/little-clacton",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Sunshine Coast",
+          "url": "https://essex-sunshine-coast.org.uk/places/little-clacton/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Interior opening varies.",
+      "photo_search_queries": [
+        "St James' Church, Little Clacton"
+      ]
+    },
+    {
+      "id": "naze-tower-daytrip",
+      "name": "Naze Tower (Walton day trip)",
+      "area": "Other Tendring",
+      "category_hint": "day_trip_landmark",
+      "tagline": "1720 Trinity House tower with views",
+      "description": "Grade II* 86ft octagonal tower; gallery, museum, tea rooms, roof. Typically late Mar–early Nov daily 10–17.",
+      "highlights": [
+        "Roof views",
+        "Museum & tea rooms",
+        "Beside Naze cliffs"
+      ],
+      "location_address": "Old Hall Lane, Walton-on-the-Naze, CO14 8LE",
+      "coords": {
+        "lat": 51.866,
+        "lng": 1.288
+      },
+      "official_url": "https://www.nazetower.co.uk/",
+      "sources": [
+        {
+          "title": "Naze Tower",
+          "url": "https://www.nazetower.co.uk/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Visit Essex",
+          "url": "https://www.visitessex.com/things-to-do/naze-tower-p1268261",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Stairs not step-free; seasonal.",
+      "photo_search_queries": [
+        "Naze Tower (Walton day trip)"
+      ]
+    },
+    {
+      "id": "clacton-heritage-trail",
+      "name": "Clacton Heritage Trail (Clacton 150)",
+      "area": "Clacton",
+      "category_hint": "heritage_trail",
+      "tagline": "5-mile seafront trail with 19 signs",
+      "description": "NLHF trail (2021) from Sunspot to Borrow Pit Bay Holland with 19 interpretation points and some AR via Zappar.",
+      "highlights": [
+        "19 signs",
+        "Seafront walk",
+        "AR at some points"
+      ],
+      "location_address": "Seafront Clacton to Holland-on-Sea",
+      "coords": null,
+      "official_url": "https://essex-sunshine-coast.org.uk/places/trails-of-tendring/",
+      "sources": [
+        {
+          "title": "Trails of Tendring",
+          "url": "https://essex-sunshine-coast.org.uk/places/trails-of-tendring/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Clacton Heritage Trail (Clacton 150)"
+      ]
+    }
+  ],
+  "cafes_coffee": [
+    {
+      "id": "toast-coffee-clacton",
+      "name": "TOAST Coffee Clacton",
+      "area": "Clacton",
+      "category_hint": "speciality_coffee",
+      "tagline": "Essex speciality coffee on Pier Avenue",
+      "description": "Independent Essex coffee brand at 73–75 Pier Avenue. Official: Mon–Sat 08:00–17:00, Sun 09:00–16:00.",
+      "highlights": [
+        "Speciality coffee",
+        "Brunch/lunch",
+        "Pier Avenue"
+      ],
+      "location_address": "73–75 Pier Avenue, CO15 1QE",
+      "coords": {
+        "lat": 51.7895,
+        "lng": 1.1545
+      },
+      "official_url": "https://www.lovetoast.co.uk/blog/our-7th-store-opens-in-clacton-on-sea",
+      "sources": [
+        {
+          "title": "TOAST blog",
+          "url": "https://www.lovetoast.co.uk/blog/our-7th-store-opens-in-clacton-on-sea",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "TOAST Coffee Clacton"
+      ]
+    },
+    {
+      "id": "martello-lounge",
+      "name": "Martello Lounge",
+      "area": "Clacton",
+      "category_hint": "cafe_bar",
+      "tagline": "Seafront Lounge café-bar by the pier",
+      "description": "Lounges group café-bar in Atlanta Building, Kings Promenade. Sun–Thu 09–22, Fri–Sat 09–23 per official page.",
+      "highlights": [
+        "Seafront terraces",
+        "All-day menu",
+        "Beside pier"
+      ],
+      "location_address": "Atlanta Building, Kings Promenade, CO15 1FS",
+      "coords": {
+        "lat": 51.786,
+        "lng": 1.1555
+      },
+      "official_url": "https://thelounges.co.uk/martello/",
+      "sources": [
+        {
+          "title": "Martello Lounge",
+          "url": "https://thelounges.co.uk/martello/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Martello Lounge"
+      ]
+    },
+    {
+      "id": "rosies-kabin",
+      "name": "Rosie's Kabin",
+      "area": "Clacton",
+      "category_hint": "cafe",
+      "tagline": "High-street community café",
+      "description": "Independent café (formerly The Kabin) with all-day breakfasts etc. Covered in Clacton & Frinton Gazette after staff takeover.",
+      "highlights": [
+        "All-day breakfasts",
+        "Community hub",
+        "Town centre"
+      ],
+      "location_address": null,
+      "coords": null,
+      "official_url": null,
+      "sources": [
+        {
+          "title": "Gazette review",
+          "url": "https://www.clactonandfrintongazette.co.uk/news/25899915.tried-homestyle-breakfast-burger-clacton-10/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "medium",
+      "notes_uncertainty": "Exact unit number not on operator site this pass.",
+      "photo_search_queries": [
+        "Rosie's Kabin"
+      ]
+    },
+    {
+      "id": "grandma-lillys",
+      "name": "Grandma Lilly's Tea Rooms",
+      "area": "Holland-on-Sea",
+      "category_hint": "tea_rooms",
+      "tagline": "Family tea rooms since 1997",
+      "description": "Frinton Road tea rooms; Tue–Sat 09:00–16:00; closed Mon/Sun per official site.",
+      "highlights": [
+        "Afternoon tea",
+        "Est. 1997",
+        "Near Holland seafront"
+      ],
+      "location_address": "34–36 Frinton Road, Holland-on-Sea, CO15 5UL",
+      "coords": {
+        "lat": 51.8035,
+        "lng": 1.1885
+      },
+      "official_url": "https://grandmalillys.co.uk/",
+      "sources": [
+        {
+          "title": "Grandma Lilly's",
+          "url": "https://grandmalillys.co.uk/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Grandma Lilly's Tea Rooms"
+      ]
+    },
+    {
+      "id": "beach-haven-cafe",
+      "name": "The Beach Haven Cafe",
+      "area": "Holland-on-Sea",
+      "category_hint": "beach_cafe",
+      "tagline": "Dog-friendly esplanade café",
+      "description": "Esplanade café/kiosk for ice cream and light meals; Facebook presence. Postcodes vary in listings.",
+      "highlights": [
+        "Beach seating",
+        "Ice cream",
+        "Dog-friendly outdoor"
+      ],
+      "location_address": "The Esplanade, Holland-on-Sea",
+      "coords": {
+        "lat": 51.802,
+        "lng": 1.195
+      },
+      "official_url": "https://www.facebook.com/thebeachhavenkiosk/",
+      "sources": [
+        {
+          "title": "Sluurpy listing",
+          "url": "https://www.sluurpy.co.uk/holland-on-sea/restaurant/4884148/the-beach-haven",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "medium",
+      "notes_uncertainty": "Postcode listings differ; verify on arrival.",
+      "photo_search_queries": [
+        "The Beach Haven Cafe"
+      ]
+    }
+  ],
+  "restaurants_pubs_food": [
+    {
+      "id": "salts-by-the-sea",
+      "name": "Salts by the Sea",
+      "area": "Clacton",
+      "category_hint": "seafood_restaurant",
+      "tagline": "Seafood dining at Clacton Pavilion",
+      "description": "Seafood restaurant at Pavilion with sea views; recent Gazette coverage. Listings suggest Wed–Sun, closed Mon–Tue.",
+      "highlights": [
+        "Seafood focus",
+        "Sea views",
+        "Specials board"
+      ],
+      "location_address": "Clacton Pavilion, Marine Parade East, CO15 1PT",
+      "coords": {
+        "lat": 51.7862,
+        "lng": 1.1568
+      },
+      "official_url": null,
+      "sources": [
+        {
+          "title": "Gazette Salts",
+          "url": "https://www.clactonandfrintongazette.co.uk/news/25919978.seaside-restaurant-serves-best-fine-dining-seafood-essex/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "medium",
+      "notes_uncertainty": "No dedicated operator site found — confirm via Pavilion.",
+      "photo_search_queries": [
+        "Salts by the Sea"
+      ]
+    },
+    {
+      "id": "charnallies",
+      "name": "Charnallies",
+      "area": "Clacton",
+      "category_hint": "american_restaurant",
+      "tagline": "American-themed family restaurant near pier",
+      "description": "Official site: breakfast–dinner, GF/vegan menus, dog-friendly section. Reviews into Jan 2026.",
+      "highlights": [
+        "All-day dining",
+        "Dog-friendly",
+        "Near pier"
+      ],
+      "location_address": "1–5 Pier Avenue, CO15 1QB",
+      "coords": {
+        "lat": 51.7875,
+        "lng": 1.155
+      },
+      "official_url": "https://charnallies.co.uk/",
+      "sources": [
+        {
+          "title": "Charnallies",
+          "url": "https://charnallies.co.uk/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Charnallies"
+      ]
+    },
+    {
+      "id": "roaring-donkey",
+      "name": "The Roaring Donkey",
+      "area": "Holland-on-Sea",
+      "category_hint": "pub_restaurant",
+      "tagline": "Hungry Horse family pub",
+      "description": "316 Holland Road; beer garden, outdoor play, near Kings Parade.",
+      "highlights": [
+        "Family menu",
+        "Beer garden",
+        "Near promenade"
+      ],
+      "location_address": "316 Holland Road, CO15 6PD",
+      "coords": {
+        "lat": 51.797,
+        "lng": 1.175
+      },
+      "official_url": "https://www.hungryhorse.co.uk/pubs/essex/roaring-donkey",
+      "sources": [
+        {
+          "title": "Hungry Horse",
+          "url": "https://www.hungryhorse.co.uk/pubs/essex/roaring-donkey",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "The Roaring Donkey"
+      ]
+    },
+    {
+      "id": "kings-arms-st-osyth",
+      "name": "The Kings Arms, St Osyth",
+      "area": "St Osyth",
+      "category_hint": "pub_restaurant",
+      "tagline": "Village pub near Priory (bldg dated 1769)",
+      "description": "Colchester Road pub/restaurant with food, music, parking/rooms. Facebook primary presence.",
+      "highlights": [
+        "Village centre",
+        "Near Priory/museum",
+        "Food & drink"
+      ],
+      "location_address": "10 Colchester Road, St Osyth",
+      "coords": {
+        "lat": 51.7988,
+        "lng": 1.078
+      },
+      "official_url": "https://www.facebook.com/p/The-Kings-Arms-St-Osyth-61550588362986/",
+      "sources": [
+        {
+          "title": "Things To Do listing",
+          "url": "https://thingstodoinclacton.co.uk/company/the-kings-arms/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "medium",
+      "notes_uncertainty": "Confirm food hours.",
+      "photo_search_queries": [
+        "The Kings Arms, St Osyth"
+      ]
+    },
+    {
+      "id": "blacksmiths-arms-little-clacton",
+      "name": "The Blacksmith's Arms",
+      "area": "Little Clacton",
+      "category_hint": "pub",
+      "tagline": "Historic village pub / former coaching inn",
+      "description": "Listed by parish council and Sunshine Coast among key historic buildings.",
+      "highlights": [
+        "Village pub",
+        "Historic inn",
+        "Near St James"
+      ],
+      "location_address": "Little Clacton",
+      "coords": null,
+      "official_url": null,
+      "sources": [
+        {
+          "title": "Sunshine Coast LC",
+          "url": "https://essex-sunshine-coast.org.uk/places/little-clacton/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Parish council",
+          "url": "https://www.littleclactonparishcouncil.gov.uk/little-clacton",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "medium",
+      "notes_uncertainty": "Confirm current kitchen hours.",
+      "photo_search_queries": [
+        "The Blacksmith's Arms"
+      ]
+    }
+  ],
+  "nature_wildlife": [
+    {
+      "id": "holland-haven-country-park",
+      "name": "Holland Haven Country Park",
+      "area": "Holland-on-Sea",
+      "category_hint": "country_park_lnr",
+      "tagline": "Coastal marsh LNR with bird hides",
+      "description": "TDC country park; part of Holland Haven Marshes SSSI. Hides, picnic; satnav often CO15 5TZ. Wider SSSI largely private.",
+      "highlights": [
+        "Bird hides",
+        "SSSI flora/fauna",
+        "Coastal walks"
+      ],
+      "location_address": "Holland Haven, Holland-on-Sea",
+      "coords": {
+        "lat": 51.80785,
+        "lng": 1.20911
+      },
+      "official_url": "https://legacy.tendringdc.gov.uk/leisure/countryside-parks-gardens/nature-and-countryside",
+      "sources": [
+        {
+          "title": "TDC nature",
+          "url": "https://legacy.tendringdc.gov.uk/leisure/countryside-parks-gardens/nature-and-countryside",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Wikipedia SSSI",
+          "url": "https://en.wikipedia.org/wiki/Holland_Haven_Marshes",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Stay on country park paths.",
+      "photo_search_queries": [
+        "Holland Haven Country Park"
+      ]
+    },
+    {
+      "id": "howlands-marsh",
+      "name": "Howlands Marsh",
+      "area": "St Osyth",
+      "category_hint": "ewt_reserve",
+      "tagline": "EWT coastal grazing marsh",
+      "description": "74ha; footpath + stilts hides; dogs on lead on public footpath only; no access to grazed fields.",
+      "highlights": [
+        "Winter wildfowl",
+        "Marsh harriers",
+        "Two hides"
+      ],
+      "location_address": "B1027 Colchester Road, St Osyth, CO16 8HW",
+      "coords": {
+        "lat": 51.805,
+        "lng": 1.055
+      },
+      "official_url": "https://www.essexwt.org.uk/nature-reserves/howlands-marsh",
+      "sources": [
+        {
+          "title": "EWT Howlands",
+          "url": "https://www.essexwt.org.uk/nature-reserves/howlands-marsh",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Tiny lay-by (3–4 cars).",
+      "photo_search_queries": [
+        "Howlands Marsh"
+      ]
+    },
+    {
+      "id": "colne-point",
+      "name": "Colne Point Nature Reserve",
+      "area": "St Osyth",
+      "category_hint": "ewt_reserve_restricted",
+      "tagline": "Members/prior consent only",
+      "description": "264ha saltmarsh/shingle NNR component. Members or prior consent; flood risk; no dogs; little tern nesting.",
+      "highlights": [
+        "Little terns",
+        "Saltmarsh",
+        "Restricted access"
+      ],
+      "location_address": "Beach Road off Lee Wick Farm, CO16 8ET",
+      "coords": {
+        "lat": 51.775,
+        "lng": 1.045
+      },
+      "official_url": "https://www.essexwt.org.uk/nature-reserves/colne-point",
+      "sources": [
+        {
+          "title": "EWT Colne Point",
+          "url": "https://www.essexwt.org.uk/nature-reserves/colne-point",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Not casual public access.",
+      "photo_search_queries": [
+        "Colne Point Nature Reserve"
+      ]
+    },
+    {
+      "id": "great-holland-pits",
+      "name": "Great Holland Pits",
+      "area": "Other Tendring",
+      "category_hint": "ewt_reserve",
+      "tagline": "Former gravel pits wildlife haven",
+      "description": "13ha ponds/woodland/grassland on Little Clacton Road; open always; small car park; no parking Mill Lane.",
+      "highlights": [
+        "Ponds",
+        "Butterflies",
+        "Near Little Clacton"
+      ],
+      "location_address": "Little Clacton Road, Great Holland, CO13 0EU",
+      "coords": {
+        "lat": 51.82,
+        "lng": 1.205
+      },
+      "official_url": "https://www.essexwt.org.uk/nature-reserves/great-holland-pits",
+      "sources": [
+        {
+          "title": "EWT GHP",
+          "url": "https://www.essexwt.org.uk/nature-reserves/great-holland-pits",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Great Holland Pits"
+      ]
+    },
+    {
+      "id": "weeleyhall-wood",
+      "name": "Weeleyhall Wood",
+      "area": "Other Tendring",
+      "category_hint": "ewt_ancient_woodland",
+      "tagline": "Ancient woodland SSSI near Weeley",
+      "description": "32ha; bluebells/nightingales; dogs banned 1 Mar–1 Jul; on leads 1 Jul–1 Mar. Park at Weeley Church CO16 9AT.",
+      "highlights": [
+        "Bluebells",
+        "Nightingales",
+        "Ancient oak"
+      ],
+      "location_address": "Church Lane, Weeley, CO16 9AT",
+      "coords": {
+        "lat": 51.855,
+        "lng": 1.135
+      },
+      "official_url": "https://www.essexwt.org.uk/nature-reserves/weeleyhall-wood",
+      "sources": [
+        {
+          "title": "EWT Weeleyhall",
+          "url": "https://www.essexwt.org.uk/nature-reserves/weeleyhall-wood",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Weeleyhall Wood"
+      ]
+    },
+    {
+      "id": "naze-nature-centre",
+      "name": "Naze Nature Discovery Centre",
+      "area": "Other Tendring",
+      "category_hint": "day_trip_nature",
+      "tagline": "EWT centre for fossils & coastal walks",
+      "description": "Café/shop/education; Naze cliffs SSSI eroding 1–2m/yr; Geowalk; open all year.",
+      "highlights": [
+        "Fossil hunting",
+        "Café views",
+        "John Weston NR"
+      ],
+      "location_address": "Old Hall Lane, Walton, CO14 8LE",
+      "coords": {
+        "lat": 51.8641,
+        "lng": 1.2877
+      },
+      "official_url": "https://www.essexwt.org.uk/nature-reserves/naze",
+      "sources": [
+        {
+          "title": "EWT Naze",
+          "url": "https://www.essexwt.org.uk/nature-reserves/naze",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Check tides; don't dig cliffs.",
+      "photo_search_queries": [
+        "Naze Nature Discovery Centre"
+      ]
+    }
+  ],
+  "history_heritage": [
+    {
+      "id": "st-osyth-priory-gatehouse",
+      "name": "St Osyth Priory Gatehouse",
+      "area": "St Osyth",
+      "category_hint": "listed_building",
+      "tagline": "Late-15th-c flint Grade I gatehouse",
+      "description": "Most significant surviving monastic structure at the Priory; decorative flint; five Grade I listings cover major buildings.",
+      "highlights": [
+        "Grade I",
+        "Flint flushwork",
+        "Estate landmark"
+      ],
+      "location_address": "St Osyth Priory",
+      "coords": {
+        "lat": 51.7992,
+        "lng": 1.0749
+      },
+      "official_url": "https://en.wikipedia.org/wiki/St_Osyth%27s_Priory",
+      "sources": [
+        {
+          "title": "Wikipedia Priory",
+          "url": "https://en.wikipedia.org/wiki/St_Osyth%27s_Priory",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Interior/grounds via tours.",
+      "photo_search_queries": [
+        "St Osyth Priory Gatehouse"
+      ]
+    },
+    {
+      "id": "clacton-pier",
+      "name": "Clacton Pier",
+      "area": "Clacton",
+      "category_hint": "history_heritage",
+      "tagline": "Pleasure pier with rides, bowling and all-weather fun",
+      "description": "Clacton Pier opened 27 July 1871 as the first public building of the new seaside resort. It offers rides including a 110ft observation wheel, ten-pin bowling, soft play, adventure golf, arcade and Jurassic Pier 4D, plus food outlets. Operator published a large 2026 events programme.",
+      "highlights": [
+        "Rides & Wheel Experience",
+        "Bowling / soft play / golf",
+        "2026 events & fireworks"
+      ],
+      "location_address": "1 North Sea, Clacton-on-Sea, CO15 1QX",
+      "coords": {
+        "lat": 51.7855,
+        "lng": 1.1559
+      },
+      "official_url": "https://www.clactonpier.co.uk/",
+      "sources": [
+        {
+          "title": "Clacton Pier",
+          "url": "https://www.clactonpier.co.uk/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Wikipedia Clacton Pier",
+          "url": "https://en.wikipedia.org/wiki/Clacton_Pier",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Clacton Pier Essex",
+        "Clacton Pier wheel Geograph"
+      ]
+    },
+    {
+      "id": "princes-theatre",
+      "name": "Princes Theatre",
+      "area": "Clacton",
+      "category_hint": "history_heritage",
+      "tagline": "820-seat theatre in Grade II Town Hall",
+      "description": "Opened 14 April 1931 by Prince Arthur of Connaught inside Clacton Town Hall (Sir A Brumwell Thomas). Capacity now 820; 150+ shows/events yearly per venue history.",
+      "highlights": [
+        "Grade II Town Hall",
+        "Town centre",
+        "Touring acts"
+      ],
+      "location_address": "Clacton Town Hall, Station Road, CO15 1SE",
+      "coords": {
+        "lat": 51.7915,
+        "lng": 1.1538
+      },
+      "official_url": "https://princestheatre.co.uk/",
+      "sources": [
+        {
+          "title": "Princes Theatre history",
+          "url": "https://princestheatre.co.uk/our-history",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Princes Theatre"
+      ]
+    },
+    {
+      "id": "clacton-museum",
+      "name": "Clacton Museum",
+      "area": "Clacton",
+      "category_hint": "history_heritage",
+      "tagline": "Free local history museum above library",
+      "description": "Displays on resort since 1871, pier entertainment, Butlin's and Great Clacton. Discover Clacton: free; limited hours (Tue/Sat mornings at research time).",
+      "highlights": [
+        "Free entry",
+        "Seaside heritage",
+        "Library building"
+      ],
+      "location_address": "2nd Floor, Clacton Library, 96 Station Road, CO15 1SF",
+      "coords": {
+        "lat": 51.7912,
+        "lng": 1.153
+      },
+      "official_url": "https://discoverclacton.co.uk/place/clacton-museum/",
+      "sources": [
+        {
+          "title": "Discover Clacton Museum",
+          "url": "https://discoverclacton.co.uk/place/clacton-museum/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Very limited hours — confirm before visit.",
+      "photo_search_queries": [
+        "Clacton Museum"
+      ]
+    },
+    {
+      "id": "jaywick-martello-tower",
+      "name": "Jaywick Martello Tower",
+      "area": "Jaywick",
+      "category_hint": "history_heritage",
+      "tagline": "Napoleonic Tower C as arts & heritage venue",
+      "description": "Grade II/scheduled Tower C (c.1808–1811); ECC renovated, opened 2005. Explore Essex: reopen 18 Feb 2026; term weekends / holiday Wed–Sun 10–16; £1 adult.",
+      "highlights": [
+        "History exhibition",
+        "Roof views",
+        "Martello Trail hub"
+      ],
+      "location_address": "The Promenade, Belsize Ave, Jaywick, CO15 2LF",
+      "coords": {
+        "lat": 51.7727,
+        "lng": 1.094
+      },
+      "official_url": "https://www.explore-essex.com/places-to-go/find-whats-near-me/jaywick-martello-tower",
+      "sources": [
+        {
+          "title": "Explore Essex JMT",
+          "url": "https://www.explore-essex.com/places-to-go/find-whats-near-me/jaywick-martello-tower",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jaywick_Martello_Tower",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Check staffing closures.",
+      "photo_search_queries": [
+        "Jaywick Martello Tower"
+      ]
+    },
+    {
+      "id": "st-osyth-priory-tours",
+      "name": "St Osyth Priory (guided tours)",
+      "area": "St Osyth",
+      "category_hint": "history_heritage",
+      "tagline": "Medieval abbey estate via pre-booked tours",
+      "description": "Founded c.1121 Augustinian house; Grade I complex. Public via Priory & Parish Trust seasonal guided walking/trailer/nature tours — not free roaming.",
+      "highlights": [
+        "Gatehouse",
+        "Pre-booked tours",
+        "Large estate"
+      ],
+      "location_address": "Education Centre, Colchester Road, St Osyth, CO16 8HA",
+      "coords": {
+        "lat": 51.7992,
+        "lng": 1.0749
+      },
+      "official_url": "https://www.stosythprioryandparishtrust.org/visit/",
+      "sources": [
+        {
+          "title": "Priory Trust visit",
+          "url": "https://www.stosythprioryandparishtrust.org/visit/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Wikipedia Priory",
+          "url": "https://en.wikipedia.org/wiki/St_Osyth%27s_Priory",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Book tours; seasonal.",
+      "photo_search_queries": [
+        "St Osyth Priory (guided tours)"
+      ]
+    },
+    {
+      "id": "east-essex-aviation-museum",
+      "name": "East Essex Aviation Society & Museum",
+      "area": "Point Clear",
+      "category_hint": "history_heritage",
+      "tagline": "WWII aviation museum in Martello Tower",
+      "description": "In Point Clear Martello since 1986; P-51 Mustang remains from 13 Jan 1945 ditching. Typical hours Apr–Oct Sun 10–14; Jun–Sep also Wed 10–14; donations.",
+      "highlights": [
+        "Martello setting",
+        "P-51 display",
+        "Donation entry"
+      ],
+      "location_address": "Martello Tower, Point Clear, CO16 8LW",
+      "coords": {
+        "lat": 51.783,
+        "lng": 1.055
+      },
+      "official_url": "http://www.eastessexaviationsociety.org/",
+      "sources": [
+        {
+          "title": "Air Museum Network",
+          "url": "https://airmuseumnetwork.com/directory/listing/east-essex-aviation-society-museum",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "medium",
+      "notes_uncertainty": "Confirm hours on social; postcodes vary in directories.",
+      "photo_search_queries": [
+        "East Essex Aviation Society & Museum"
+      ]
+    },
+    {
+      "id": "naze-tower-daytrip",
+      "name": "Naze Tower (Walton day trip)",
+      "area": "Other Tendring",
+      "category_hint": "history_heritage",
+      "tagline": "1720 Trinity House tower with views",
+      "description": "Grade II* 86ft octagonal tower; gallery, museum, tea rooms, roof. Typically late Mar–early Nov daily 10–17.",
+      "highlights": [
+        "Roof views",
+        "Museum & tea rooms",
+        "Beside Naze cliffs"
+      ],
+      "location_address": "Old Hall Lane, Walton-on-the-Naze, CO14 8LE",
+      "coords": {
+        "lat": 51.866,
+        "lng": 1.288
+      },
+      "official_url": "https://www.nazetower.co.uk/",
+      "sources": [
+        {
+          "title": "Naze Tower",
+          "url": "https://www.nazetower.co.uk/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Visit Essex",
+          "url": "https://www.visitessex.com/things-to-do/naze-tower-p1268261",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Stairs not step-free; seasonal.",
+      "photo_search_queries": [
+        "Naze Tower (Walton day trip)"
+      ]
+    },
+    {
+      "id": "clacton-heritage-trail",
+      "name": "Clacton Heritage Trail (Clacton 150)",
+      "area": "Clacton",
+      "category_hint": "history_heritage",
+      "tagline": "5-mile seafront trail with 19 signs",
+      "description": "NLHF trail (2021) from Sunspot to Borrow Pit Bay Holland with 19 interpretation points and some AR via Zappar.",
+      "highlights": [
+        "19 signs",
+        "Seafront walk",
+        "AR at some points"
+      ],
+      "location_address": "Seafront Clacton to Holland-on-Sea",
+      "coords": null,
+      "official_url": "https://essex-sunshine-coast.org.uk/places/trails-of-tendring/",
+      "sources": [
+        {
+          "title": "Trails of Tendring",
+          "url": "https://essex-sunshine-coast.org.uk/places/trails-of-tendring/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Clacton Heritage Trail (Clacton 150)"
+      ]
+    }
+  ],
+  "history_facts": [
+    {
+      "id": "hf-pier-1871",
+      "fact": "Clacton Pier opened 27 July 1871 as the first public building of Clacton-on-Sea; originally ~160 yards as a steamship landing stage.",
+      "source_url": "https://en.wikipedia.org/wiki/Clacton_Pier",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-pier-1893",
+      "fact": "By 1893 the pier was lengthened to about 1,180 ft (360 m) with pavilion facilities for growing day-trippers.",
+      "source_url": "https://en.wikipedia.org/wiki/Clacton_Pier",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-bruff",
+      "fact": "Modern Clacton-on-Sea was founded as a planned seaside resort from 1871 under Peter Bruff; railway arrived 1882.",
+      "source_url": "https://en.wikipedia.org/wiki/Clacton-on-Sea",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-martello-east",
+      "fact": "29 Martello towers built on Essex/Suffolk east coast c.1808/09–1812 against Napoleonic invasion; lettered from A at St Osyth/Point Clear. Name from Mortella Point, Corsica.",
+      "source_url": "https://heritagecalling.com/2025/10/09/a-brief-introduction-to-martello-towers/",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-jaywick-c",
+      "fact": "Jaywick Martello Tower (Tower C) built c.1808–1811; bought by ECC 2002; opened as arts/heritage venue 2005 after EH/NLHF-supported renovation.",
+      "source_url": "https://www.explore-essex.com/places-to-go/find-whats-near-me/jaywick-martello-tower",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-st-osyth-1121",
+      "fact": "St Osyth's Abbey (Priory) founded c.1121 by Richard de Belmeis, Bishop of London, for Augustinian canons; dissolved 1539.",
+      "source_url": "https://en.wikipedia.org/wiki/St_Osyth%27s_Priory",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-gatehouse-gi",
+      "fact": "Late-15th-century Priory gatehouse and flanking ranges are Grade I listed; five separate Grade I listings cover major priory buildings.",
+      "source_url": "https://en.wikipedia.org/wiki/St_Osyth%27s_Priory",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-princes-1931",
+      "fact": "Princes Theatre in Clacton Town Hall opened 14 April 1931 by Prince Arthur of Connaught; original 1,250 seats, now 820.",
+      "source_url": "https://princestheatre.co.uk/our-history",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-pier-year-2020",
+      "fact": "Clacton Pier named Pier of the Year 2020 by the National Piers Society.",
+      "source_url": "https://en.wikipedia.org/wiki/Clacton_Pier",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-naze-1720",
+      "fact": "Naze Tower at Walton built by Trinity House in 1720 as an 86 ft octagonal navigation mark; now Grade II* visitor attraction.",
+      "source_url": "https://www.nazetower.co.uk/",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-little-clacton",
+      "fact": "Little Clacton appears in Domesday Book; parish histories link early settlement to Bovill and Engayne estates.",
+      "source_url": "https://www.littleclactonparishcouncil.gov.uk/little-clacton",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-gardens-1921",
+      "fact": "Clacton Seafront Gardens originally laid out in 1921 and refurbished in 1997.",
+      "source_url": "https://discoverclacton.co.uk/place/clacton-seafront-gardens/",
+      "confidence": "high"
+    },
+    {
+      "id": "hf-mustang-1945",
+      "fact": "East Essex Aviation Museum grew from recovery of a USAAF P-51 Mustang ditched off Clacton 13 Jan 1945; museum opened in Point Clear Martello 1986.",
+      "source_url": "https://airmuseumnetwork.com/directory/listing/east-essex-aviation-society-museum",
+      "confidence": "high"
+    }
+  ],
+  "public_toilets": [
+    {
+      "id": "toilet-pier-gap",
+      "name": "Pier Gap Public Conveniences",
+      "area": "Clacton",
+      "category_hint": "public_toilet",
+      "tagline": "Year-round toilets opposite Clacton Pier",
+      "description": "Men's ~7 / women's ~10; disabled access adjacent by Beach Patrol. Open all year dawn–dusk.",
+      "highlights": [
+        "Year-round",
+        "Beside pier",
+        "Disabled adjacent"
+      ],
+      "location_address": "Pier Gap, CO15 1QX",
+      "coords": {
+        "lat": 51.7858,
+        "lng": 1.1555
+      },
+      "official_url": "https://www.tendringdc.gov.uk/public-conveniences/pier-gap",
+      "sources": [
+        {
+          "title": "TDC Pier Gap",
+          "url": "https://www.tendringdc.gov.uk/public-conveniences/pier-gap",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Pier Gap Public Conveniences"
+      ]
+    },
+    {
+      "id": "toilet-ambleside",
+      "name": "Ambleside (+ Changing Places)",
+      "area": "Clacton",
+      "category_hint": "public_toilet_changing_places",
+      "tagline": "Seasonal seafront toilets + Changing Places",
+      "description": "Open Good Friday–31 Oct. Changing Places next door (hoist/bed/shower; Access Key). ~5 min to pier.",
+      "highlights": [
+        "Changing Places",
+        "Seasonal",
+        "East seafront"
+      ],
+      "location_address": "Kings Promenade, CO15 6JJ",
+      "coords": {
+        "lat": 51.7885,
+        "lng": 1.162
+      },
+      "official_url": "https://www.tendringdc.gov.uk/public-conveniences/ambleside",
+      "sources": [
+        {
+          "title": "TDC Ambleside",
+          "url": "https://www.tendringdc.gov.uk/public-conveniences/ambleside",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Closed out of season.",
+      "photo_search_queries": [
+        "Ambleside (+ Changing Places)"
+      ]
+    },
+    {
+      "id": "toilet-west-greensward",
+      "name": "West Greensward (+ Changing Places)",
+      "area": "Clacton",
+      "category_hint": "public_toilet_changing_places",
+      "tagline": "Year-round toilets with Changing Places",
+      "description": "Men's ~7 / women's ~14 + baby change; Changing Places next door (Access Key). Near cafe/crazy golf/Toby.",
+      "highlights": [
+        "Year-round",
+        "Changing Places",
+        "Baby changing"
+      ],
+      "location_address": "Marine Parade Way, CO15 1ND",
+      "coords": {
+        "lat": 51.783,
+        "lng": 1.142
+      },
+      "official_url": "https://www.tendringdc.gov.uk/public-conveniences/west-greensward",
+      "sources": [
+        {
+          "title": "TDC West Greensward",
+          "url": "https://www.tendringdc.gov.uk/public-conveniences/west-greensward",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "West Greensward (+ Changing Places)"
+      ]
+    },
+    {
+      "id": "toilet-queensway",
+      "name": "Queensway Public Conveniences",
+      "area": "Holland-on-Sea",
+      "category_hint": "public_toilet",
+      "tagline": "Seasonal Holland seafront toilets",
+      "description": "Open Good Friday–31 Oct; disabled on site; near Kingscliff Hotel slope.",
+      "highlights": [
+        "Seasonal",
+        "Seafront Holland",
+        "Disabled"
+      ],
+      "location_address": "Kings Parade, Holland-on-Sea, CO15 5JF",
+      "coords": {
+        "lat": 51.801,
+        "lng": 1.188
+      },
+      "official_url": "https://www.tendringdc.gov.uk/public-conveniences/queensway",
+      "sources": [
+        {
+          "title": "TDC Queensway",
+          "url": "https://www.tendringdc.gov.uk/public-conveniences/queensway",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Queensway Public Conveniences"
+      ]
+    },
+    {
+      "id": "toilet-holland-gap",
+      "name": "Holland Gap Public Conveniences",
+      "area": "Holland-on-Sea",
+      "category_hint": "public_toilet",
+      "tagline": "Seasonal toilets by Holland Haven car park",
+      "description": "Open Good Friday–31 Oct; adjacent Haven car park & sailing club; Changing Places on seafront (Access Key).",
+      "highlights": [
+        "Seasonal",
+        "By Haven parking",
+        "Disabled"
+      ],
+      "location_address": "Manor Way, Holland-on-Sea, CO15 5UB",
+      "coords": {
+        "lat": 51.8075,
+        "lng": 1.208
+      },
+      "official_url": "https://www.tendringdc.gov.uk/public-conveniences/holland-gap",
+      "sources": [
+        {
+          "title": "TDC Holland Gap",
+          "url": "https://www.tendringdc.gov.uk/public-conveniences/holland-gap",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Holland Gap Public Conveniences"
+      ]
+    },
+    {
+      "id": "toilet-walton-pier",
+      "name": "Walton Pier Public Conveniences",
+      "area": "Other Tendring",
+      "category_hint": "public_toilet",
+      "tagline": "Year-round toilets opposite Walton Pier",
+      "description": "Useful for day trips; baby changing; disabled; beside award beach/patrol.",
+      "highlights": [
+        "Year-round",
+        "Opposite pier",
+        "Baby changing"
+      ],
+      "location_address": "The Parade, Walton, CO14 8EH",
+      "coords": {
+        "lat": 51.8485,
+        "lng": 1.27
+      },
+      "official_url": "https://www.tendringdc.gov.uk/public-conveniences/walton-pier",
+      "sources": [
+        {
+          "title": "TDC Walton Pier",
+          "url": "https://www.tendringdc.gov.uk/public-conveniences/walton-pier",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Walton Pier Public Conveniences"
+      ]
+    },
+    {
+      "id": "toilet-jaywick-sunspot-note",
+      "name": "Jaywick toilets (Sunspot) — status note",
+      "area": "Jaywick",
+      "category_hint": "public_toilet_status_note",
+      "tagline": "Sunspot toilets per TDC; not at beach waterline",
+      "description": "July 2024 Cabinet report: new toilets at Sunspot replaced Sweet Tina's; Tamarisk Way closed after vandalism; Sunspot within ~700m of Jaywick Beach.",
+      "highlights": [
+        "Sunspot location",
+        "~700m of beach",
+        "Not waterline"
+      ],
+      "location_address": "Sunspot, Jaywick (confirm entrance on TDC map/app)",
+      "coords": null,
+      "official_url": "https://tdcdemocracy.tendringdc.gov.uk/documents/s68810/A10%20Report%20Petition%20-%20Provision%20of%20Toilets%20at%20Jaywick%20Sands%20Beach.pdf",
+      "sources": [
+        {
+          "title": "TDC petition report PDF",
+          "url": "https://tdcdemocracy.tendringdc.gov.uk/documents/s68810/A10%20Report%20Petition%20-%20Provision%20of%20Toilets%20at%20Jaywick%20Sands%20Beach.pdf",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "medium",
+      "notes_uncertainty": "Pin exact entrance before publish; legacy Meadow Way listing outdated.",
+      "photo_search_queries": [
+        "Jaywick toilets (Sunspot) — status note"
+      ]
+    }
+  ],
+  "parking": [
+    {
+      "id": "parking-sea-front-bays",
+      "name": "Sea Front Bays Car Park",
+      "area": "Clacton",
+      "category_hint": "car_park",
+      "tagline": "48-bay Marine Parade East parking",
+      "description": "48 spaces (4 disabled); 24/7; Mi Permit 706017. Page charges 08:00–18:00: 1h £1.50, 4h £4, over 4h £6. Blue badge 3h free with clock.",
+      "highlights": [
+        "24/7",
+        "Seafront",
+        "706017"
+      ],
+      "location_address": "Marine Parade East, CO15 5AE",
+      "coords": {
+        "lat": 51.796,
+        "lng": 1.176
+      },
+      "official_url": "https://www.tendringdc.gov.uk/car-parks/sea-front-bays-clacton-on-sea",
+      "sources": [
+        {
+          "title": "TDC Sea Front Bays",
+          "url": "https://www.tendringdc.gov.uk/car-parks/sea-front-bays-clacton-on-sea",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Fees 2025-26 decision",
+          "url": "https://tdcdemocracy.tendringdc.gov.uk/mgIssueHistoryHome.aspx?IId=34811&Opt=0",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Fees may change under 2025/26 schedule — verify Mi Permit.",
+      "photo_search_queries": [
+        "Sea Front Bays Car Park"
+      ]
+    },
+    {
+      "id": "parking-martello-coach",
+      "name": "Martello Coach and Car Park",
+      "area": "Clacton",
+      "category_hint": "car_park_coach",
+      "tagline": "West Road car & coach park",
+      "description": "48 cars + 14 coaches; Mi 706011/706028. Page: 2h £3.50, 4h £6, over 4h £8. LOCKED 21:00 (Apr–Sep) / 18:00 (Oct–Mar).",
+      "highlights": [
+        "Coach parking",
+        "Near Martello Bay",
+        "Night lock"
+      ],
+      "location_address": "West Road, CO15 1AH",
+      "coords": {
+        "lat": 51.7827,
+        "lng": 1.1421
+      },
+      "official_url": "https://www.tendringdc.gov.uk/car-parks/martello-coach-and-car-park-clacton-on-sea",
+      "sources": [
+        {
+          "title": "TDC Martello CP",
+          "url": "https://www.tendringdc.gov.uk/car-parks/martello-coach-and-car-park-clacton-on-sea",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Verify live charges.",
+      "photo_search_queries": [
+        "Martello Coach and Car Park"
+      ]
+    },
+    {
+      "id": "parking-holland-haven",
+      "name": "Holland Haven Car Park",
+      "area": "Holland-on-Sea",
+      "category_hint": "car_park",
+      "tagline": "~300-space grass park for country park",
+      "description": "Mi Permit 706016; beside Holland Gap toilets (seasonal).",
+      "highlights": [
+        "300 spaces",
+        "Country park",
+        "706016"
+      ],
+      "location_address": "Holland Haven, Holland-on-Sea",
+      "coords": {
+        "lat": 51.80785,
+        "lng": 1.20911
+      },
+      "official_url": "https://www.tendringdc.gov.uk/car-parking",
+      "sources": [
+        {
+          "title": "TDC car parks",
+          "url": "https://www.tendringdc.gov.uk/car-parking",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Tariff verify live.",
+      "photo_search_queries": [
+        "Holland Haven Car Park"
+      ]
+    },
+    {
+      "id": "parking-jaywick-beach",
+      "name": "Jaywick Beach Car Park",
+      "area": "Jaywick",
+      "category_hint": "car_park",
+      "tagline": "Tamarisk Way beach parking",
+      "description": "54 spaces (4 disabled); Mi 706027.",
+      "highlights": [
+        "54 spaces",
+        "Near beach",
+        "706027"
+      ],
+      "location_address": "Tamarisk Way, Jaywick",
+      "coords": {
+        "lat": 51.7735,
+        "lng": 1.1119
+      },
+      "official_url": "https://www.tendringdc.gov.uk/car-parking",
+      "sources": [
+        {
+          "title": "TDC car parks",
+          "url": "https://www.tendringdc.gov.uk/car-parking",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Jaywick Beach Car Park"
+      ]
+    },
+    {
+      "id": "parking-wellesley",
+      "name": "Wellesley Road Car Park",
+      "area": "Clacton",
+      "category_hint": "car_park",
+      "tagline": "Large town-centre car park (206)",
+      "description": "206 spaces; Mi 706013; useful for theatres/town.",
+      "highlights": [
+        "206 spaces",
+        "Town centre",
+        "706013"
+      ],
+      "location_address": "Wellesley Road, Clacton",
+      "coords": {
+        "lat": 51.7924,
+        "lng": 1.151
+      },
+      "official_url": "https://www.tendringdc.gov.uk/car-parking",
+      "sources": [
+        {
+          "title": "TDC car parks",
+          "url": "https://www.tendringdc.gov.uk/car-parking",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Wellesley Road Car Park"
+      ]
+    },
+    {
+      "id": "parking-hazelmere",
+      "name": "Hazelmere Road Car Park",
+      "area": "Holland-on-Sea",
+      "category_hint": "car_park",
+      "tagline": "Large Holland car park (140)",
+      "description": "140 spaces (4 disabled); Mi 706033.",
+      "highlights": [
+        "140 spaces",
+        "Holland access",
+        "706033"
+      ],
+      "location_address": "Hazelmere Road, Holland-on-Sea",
+      "coords": {
+        "lat": 51.79739,
+        "lng": 1.18067
+      },
+      "official_url": "https://www.tendringdc.gov.uk/car-parking",
+      "sources": [
+        {
+          "title": "TDC car parks",
+          "url": "https://www.tendringdc.gov.uk/car-parking",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Hazelmere Road Car Park"
+      ]
+    },
+    {
+      "id": "parking-naze",
+      "name": "Naze Car Park",
+      "area": "Other Tendring",
+      "category_hint": "car_park",
+      "tagline": "Pay & display for Naze Tower/centre",
+      "description": "~250 spaces; Mi 706004. EWT quotes example tariffs — verify live.",
+      "highlights": [
+        "Serves Naze",
+        "~250 spaces",
+        "706004"
+      ],
+      "location_address": "Old Hall Lane, Walton",
+      "coords": {
+        "lat": 51.8640815,
+        "lng": 1.28766
+      },
+      "official_url": "https://www.tendringdc.gov.uk/car-parking",
+      "sources": [
+        {
+          "title": "TDC car parks",
+          "url": "https://www.tendringdc.gov.uk/car-parking",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "EWT Naze",
+          "url": "https://www.essexwt.org.uk/nature-reserves/naze",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Quoted £ may lag fee review.",
+      "photo_search_queries": [
+        "Naze Car Park"
+      ]
+    }
+  ],
+  "near_barn_fields_retreat": [
+    {
+      "id": "barnfields-retreat",
+      "name": "Barnfields Retreat",
+      "area": "Little Clacton",
+      "category_hint": "accommodation_anchor",
+      "tagline": "B&B/annexe at Weeley Heath / Little Clacton CO16 9EF",
+      "description": "Listings place 1 Barnfields, Weeley/Little Clacton CO16 9EF with garden views, WiFi and free private parking. Base for EWT sites and Clacton coast (~20–30 min drive estimate).",
+      "highlights": [
+        "CO16 9EF",
+        "Near Weeley & Little Clacton",
+        "Coast day trips"
+      ],
+      "location_address": "1 Barnfields / The Annexe Barnfields, Weeley Heath / Little Clacton, CO16 9EF",
+      "coords": null,
+      "official_url": null,
+      "sources": [
+        {
+          "title": "Skyscanner listing",
+          "url": "https://www.skyscanner.com.sg/hotels/united-kingdom/weeley-hotels/barnfields-retreat/ht-205562822",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "medium",
+      "notes_uncertainty": "No independent operator website verified; confirm with host.",
+      "photo_search_queries": [
+        "Barnfields Retreat"
+      ]
+    },
+    {
+      "id": "near-great-holland-pits",
+      "name": "Great Holland Pits (nearby)",
+      "area": "Other Tendring",
+      "category_hint": "nearby_nature",
+      "tagline": "EWT reserve on Little Clacton Road",
+      "description": "See nature entry. Convenient countryside walk from Weeley Heath/Little Clacton corridor.",
+      "highlights": [
+        "Open always",
+        "Small car park",
+        "Ponds"
+      ],
+      "location_address": "Little Clacton Road, Great Holland, CO13 0EU",
+      "coords": {
+        "lat": 51.82,
+        "lng": 1.205
+      },
+      "official_url": "https://www.essexwt.org.uk/nature-reserves/great-holland-pits",
+      "sources": [
+        {
+          "title": "EWT",
+          "url": "https://www.essexwt.org.uk/nature-reserves/great-holland-pits",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Great Holland Pits (nearby)"
+      ]
+    },
+    {
+      "id": "near-st-james-walks",
+      "name": "St James' Church & village walks",
+      "area": "Little Clacton",
+      "category_hint": "nearby_heritage_walks",
+      "tagline": "Church and ~3–4 mile circular",
+      "description": "Parish church and village heritage; Sunshine Coast describes circular from church.",
+      "highlights": [
+        "Norman church",
+        "Village circular",
+        "Quiet lanes"
+      ],
+      "location_address": "Little Clacton",
+      "coords": {
+        "lat": 51.825,
+        "lng": 1.145
+      },
+      "official_url": "https://essex-sunshine-coast.org.uk/places/little-clacton/",
+      "sources": [
+        {
+          "title": "Sunshine Coast",
+          "url": "https://essex-sunshine-coast.org.uk/places/little-clacton/",
+          "accessed_note": "2026-09-10"
+        },
+        {
+          "title": "Parish",
+          "url": "https://www.littleclactonparishcouncil.gov.uk/little-clacton",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "St James' Church & village walks"
+      ]
+    },
+    {
+      "id": "near-weeleyhall-wood",
+      "name": "Weeleyhall Wood (nearby)",
+      "area": "Other Tendring",
+      "category_hint": "nearby_nature",
+      "tagline": "Ancient woodland near Weeley",
+      "description": "See nature entry; park at Weeley Church; dog ban Mar–Jul.",
+      "highlights": [
+        "SSSI woodland",
+        "Bluebells",
+        "Nightingales"
+      ],
+      "location_address": "Church Lane, Weeley, CO16 9AT",
+      "coords": {
+        "lat": 51.855,
+        "lng": 1.135
+      },
+      "official_url": "https://www.essexwt.org.uk/nature-reserves/weeleyhall-wood",
+      "sources": [
+        {
+          "title": "EWT",
+          "url": "https://www.essexwt.org.uk/nature-reserves/weeleyhall-wood",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Weeleyhall Wood (nearby)"
+      ]
+    },
+    {
+      "id": "near-weeley-village",
+      "name": "Weeley village / church access",
+      "area": "Other Tendring",
+      "category_hint": "nearby_village",
+      "tagline": "Village waypoint for woodland",
+      "description": "Wild Essex: park in front of Weeley Church for Weeleyhall Wood access via Church Lane.",
+      "highlights": [
+        "Church parking tip",
+        "B1441",
+        "Rail at Weeley"
+      ],
+      "location_address": "Weeley, CO16 9AT",
+      "coords": {
+        "lat": 51.856,
+        "lng": 1.132
+      },
+      "official_url": "https://www.wildessex.net/sites/Weeleyhall%20Wood.htm",
+      "sources": [
+        {
+          "title": "Wild Essex",
+          "url": "https://www.wildessex.net/sites/Weeleyhall%20Wood.htm",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "medium",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Weeley village / church access"
+      ]
+    },
+    {
+      "id": "near-clacton-pier",
+      "name": "Clacton Pier (drive from base)",
+      "area": "Clacton",
+      "category_hint": "nearby_attraction",
+      "tagline": "Main seaside day out",
+      "description": "See attractions. Drive from Weeley Heath/Little Clacton typically ~20–30 min (estimate only).",
+      "highlights": [
+        "Flagship pier",
+        "All-weather options"
+      ],
+      "location_address": "1 North Sea, CO15 1QX",
+      "coords": {
+        "lat": 51.7855,
+        "lng": 1.1559
+      },
+      "official_url": "https://www.clactonpier.co.uk/",
+      "sources": [
+        {
+          "title": "Pier",
+          "url": "https://www.clactonpier.co.uk/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": "Drive time not from official journey planner.",
+      "photo_search_queries": [
+        "Clacton Pier (drive from base)"
+      ]
+    },
+    {
+      "id": "near-shopping-village",
+      "name": "Clacton Shopping Village (nearby)",
+      "area": "Clacton",
+      "category_hint": "nearby_shopping",
+      "tagline": "Retail stop toward Clacton",
+      "description": "Stephenson Road West CO15 4TL off A133.",
+      "highlights": [
+        "Free parking claim",
+        "Brands"
+      ],
+      "location_address": "Stephenson Road West, CO15 4TL",
+      "coords": {
+        "lat": 51.8105,
+        "lng": 1.145
+      },
+      "official_url": "https://clactonshoppingvillage.com/",
+      "sources": [
+        {
+          "title": "CSV",
+          "url": "https://clactonshoppingvillage.com/",
+          "accessed_note": "2026-09-10"
+        }
+      ],
+      "confidence": "high",
+      "notes_uncertainty": null,
+      "photo_search_queries": [
+        "Clacton Shopping Village (nearby)"
+      ]
+    }
+  ],
+  "cautions_to_note": [
+    {
+      "id": "caution-colne-point-access",
+      "title": "Colne Point is not casual public access",
+      "severity": "avoid",
+      "where_applies": "Colne Point NR, St Osyth",
+      "advice": "EWT: Wildlife Trust members only or prior consent. Car park needs prior consent and can flood on high tides.",
+      "source_url": "https://www.essexwt.org.uk/nature-reserves/colne-point",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-colne-point-nesting",
+      "title": "Ground-nesting birds at Colne Point",
+      "severity": "caution",
+      "where_applies": "Colne Point beach/shingle in summer",
+      "advice": "Important for little terns, oystercatchers, ringed plovers. Avoid nest disturbance; follow Share Our Shores if visiting with permission.",
+      "source_url": "https://www.essexwt.org.uk/nature-reserves/colne-point",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-howlands-dogs",
+      "title": "Howlands Marsh dog/field restrictions",
+      "severity": "caution",
+      "where_applies": "Howlands Marsh EWT",
+      "advice": "Dogs only on public footpath on leads. No public access into grazed fields.",
+      "source_url": "https://www.essexwt.org.uk/nature-reserves/howlands-marsh",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-weeleyhall-dogs",
+      "title": "Weeleyhall Wood seasonal dog ban",
+      "severity": "caution",
+      "where_applies": "Weeleyhall Wood",
+      "advice": "Dogs not permitted 1 Mar–1 Jul; on leads 1 Jul–1 Mar.",
+      "source_url": "https://www.essexwt.org.uk/nature-reserves/weeleyhall-wood",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-holland-haven-private",
+      "title": "Much of Holland Haven Marshes SSSI is private",
+      "severity": "caution",
+      "where_applies": "Beyond country park paths",
+      "advice": "Country park accessible; much of wider SSSI private with no public access. Stay on signed routes.",
+      "source_url": "https://en.wikipedia.org/wiki/Holland_Haven_Marshes",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-martello-lock",
+      "title": "Martello Coach & Car Park locks at night",
+      "severity": "caution",
+      "where_applies": "West Road Martello CP",
+      "advice": "Locked 21:00 (1 Apr–30 Sep) and 18:00 (1 Oct–31 Mar).",
+      "source_url": "https://www.tendringdc.gov.uk/car-parks/martello-coach-and-car-park-clacton-on-sea",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-seasonal-toilets",
+      "title": "Many seafront toilets are seasonal",
+      "severity": "info",
+      "where_applies": "Ambleside, Queensway, Holland Gap",
+      "advice": "Open Good Friday–31 Oct. Year-round: Pier Gap, West Greensward. Index notes seasonal reopen date for Easter.",
+      "source_url": "https://www.tendringdc.gov.uk/public-conveniences",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-dog-beach-bans",
+      "title": "Seasonal dog bans 1 May–30 Sep on mapped beaches",
+      "severity": "caution",
+      "where_applies": "Clacton central (Pier–West Road outfall) and Holland ban strips",
+      "advice": "Dogs banned on listed sections May–Sep; on lead on adjacent promenades. Check TDC map/signs.",
+      "source_url": "https://www.tendringdc.gov.uk/content/bye-laws-and-animals-on-beaches",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-swim-structures",
+      "title": "Keep away from piers/groynes when swimming",
+      "severity": "caution",
+      "where_applies": "All Tendring beaches",
+      "advice": "Avoid piers, groynes, breakwaters, outfalls — rips/undertows. Swim between red/yellow flags; red flag = do not enter.",
+      "source_url": "https://www.tendringdc.gov.uk/content/beach-safety",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-pier-sides",
+      "title": "Beaches either side of Clacton Pier unsupervised",
+      "severity": "caution",
+      "where_applies": "Clacton either side of pier",
+      "advice": "TDC advises using supervised beaches (Martello Bay, Palace Breakwater, East Fishtail) rather than red-flagged unsupervised pier-side areas.",
+      "source_url": "https://www.tendringdc.gov.uk/content/beach-safety",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-tides",
+      "title": "Check tides — cut-off risk on foreshore",
+      "severity": "caution",
+      "where_applies": "Coastal walks, Colne Point, Naze beach",
+      "advice": "Always check tide before shore walks/water entry. EWT also warns of flooding/tide-limited access.",
+      "source_url": "https://www.tendringdc.gov.uk/content/beach-safety",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-naze-cliffs",
+      "title": "Naze cliffs actively eroding",
+      "severity": "caution",
+      "where_applies": "Walton Naze cliffs (day trip)",
+      "advice": "Erosion ~1–2 m/year. Use Crag Walk platform; do not dig cliffs; steps to beach tide/mobility limited.",
+      "source_url": "https://www.essexwt.org.uk/nature-reserves/naze",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-parking-fees",
+      "title": "Car park charges may have changed 2025/26",
+      "severity": "info",
+      "where_applies": "All TDC pay car parks",
+      "advice": "Revised fees approved for 2025/26. Verify Mi Permit/on-site before quoting prices in guide.",
+      "source_url": "https://tdcdemocracy.tendringdc.gov.uk/mgIssueHistoryHome.aspx?IId=34811&Opt=0",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-priory-tours",
+      "title": "St Osyth Priory is tour-access only",
+      "severity": "info",
+      "where_applies": "St Osyth Priory estate",
+      "advice": "Pre-booked heritage/trailer/nature tours in season — not free open park.",
+      "source_url": "https://www.stosythprioryandparishtrust.org/visit/",
+      "confidence": "high"
+    },
+    {
+      "id": "caution-inflatables",
+      "title": "No inflatables in strong wind / windsock",
+      "severity": "caution",
+      "where_applies": "Tendring beaches",
+      "advice": "Orange windsock = dangerous wind; never take inflatables on sea. Offshore breeze can sweep them out quickly.",
+      "source_url": "https://www.tendringdc.gov.uk/content/beach-safety",
+      "confidence": "high"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "Discover Clacton",
+      "url": "https://discoverclacton.co.uk/plan-your-visit/",
+      "why_useful": "Local visitor planning hub for pier, beaches, theatres, gardens.",
+      "confidence": "high"
+    },
+    {
+      "title": "Visit Essex – Clacton-on-Sea",
+      "url": "https://www.visitessex.com/explore/coastal-destinations/clacton-on-sea",
+      "why_useful": "Official destination overview and attraction listings.",
+      "confidence": "high"
+    },
+    {
+      "title": "Tendring DC – Public Conveniences",
+      "url": "https://www.tendringdc.gov.uk/public-conveniences",
+      "why_useful": "Authoritative toilet locations and seasonal notes.",
+      "confidence": "high"
+    },
+    {
+      "title": "Tendring DC – Car Parking",
+      "url": "https://www.tendringdc.gov.uk/car-parking",
+      "why_useful": "Official car park list with Mi Permit codes and coords.",
+      "confidence": "high"
+    },
+    {
+      "title": "Tendring DC – Beach Safety",
+      "url": "https://www.tendringdc.gov.uk/content/beach-safety",
+      "why_useful": "Flags, lifeguarded beaches, swimming cautions.",
+      "confidence": "high"
+    },
+    {
+      "title": "Tendring DC – Dogs on beaches",
+      "url": "https://www.tendringdc.gov.uk/content/bye-laws-and-animals-on-beaches",
+      "why_useful": "Seasonal dog ban zones and maps.",
+      "confidence": "high"
+    },
+    {
+      "title": "Clacton Pier",
+      "url": "https://www.clactonpier.co.uk/",
+      "why_useful": "Rides, tickets, events, hours.",
+      "confidence": "high"
+    },
+    {
+      "title": "Clacton Airshow",
+      "url": "https://clactonairshow.com/",
+      "why_useful": "Official TDC-staged airshow dates, travel and parking.",
+      "confidence": "high"
+    },
+    {
+      "title": "Clacton Carnival",
+      "url": "http://www.clactoncarnival.org/",
+      "why_useful": "Carnival week and street procession details.",
+      "confidence": "high"
+    },
+    {
+      "title": "Essex Wildlife Trust – Howlands Marsh",
+      "url": "https://www.essexwt.org.uk/nature-reserves/howlands-marsh",
+      "why_useful": "Access rules and wildlife info.",
+      "confidence": "high"
+    },
+    {
+      "title": "Essex Wildlife Trust – Colne Point",
+      "url": "https://www.essexwt.org.uk/nature-reserves/colne-point",
+      "why_useful": "Restricted access and nesting cautions.",
+      "confidence": "high"
+    },
+    {
+      "title": "Essex Wildlife Trust – Great Holland Pits",
+      "url": "https://www.essexwt.org.uk/nature-reserves/great-holland-pits",
+      "why_useful": "Near Little Clacton/Weeley Heath base.",
+      "confidence": "high"
+    },
+    {
+      "title": "Essex Wildlife Trust – Weeleyhall Wood",
+      "url": "https://www.essexwt.org.uk/nature-reserves/weeleyhall-wood",
+      "why_useful": "Ancient woodland near Barn Fields corridor.",
+      "confidence": "high"
+    },
+    {
+      "title": "Essex Wildlife Trust – The Naze",
+      "url": "https://www.essexwt.org.uk/nature-reserves/naze",
+      "why_useful": "Day-trip nature centre, fossils, cliff safety.",
+      "confidence": "high"
+    },
+    {
+      "title": "Explore Essex – Jaywick Martello Tower",
+      "url": "https://www.explore-essex.com/places-to-go/find-whats-near-me/jaywick-martello-tower",
+      "why_useful": "Opening times, entry, exhibitions.",
+      "confidence": "high"
+    },
+    {
+      "title": "St Osyth Priory & Parish Trust – Visit",
+      "url": "https://www.stosythprioryandparishtrust.org/visit/",
+      "why_useful": "Book guided tours of Priory.",
+      "confidence": "high"
+    },
+    {
+      "title": "Clacton Shopping Village",
+      "url": "https://clactonshoppingvillage.com/",
+      "why_useful": "Outlet shopping and facilities.",
+      "confidence": "high"
+    },
+    {
+      "title": "Greater Anglia – Clacton-on-Sea station",
+      "url": "https://www.greateranglia.co.uk/travel-information/station-information/clt",
+      "why_useful": "Rail access, facilities, step-free Category A.",
+      "confidence": "high"
+    },
+    {
+      "title": "National Rail – Clacton-on-Sea",
+      "url": "https://www.nationalrail.co.uk/stations/clacton-on-sea/",
+      "why_useful": "Live times and station overview.",
+      "confidence": "high"
+    },
+    {
+      "title": "Naze Tower",
+      "url": "https://www.nazetower.co.uk/",
+      "why_useful": "Walton day-trip landmark hours/tickets.",
+      "confidence": "high"
+    },
+    {
+      "title": "Tendring nature & countryside (legacy)",
+      "url": "https://legacy.tendringdc.gov.uk/leisure/countryside-parks-gardens/nature-and-countryside",
+      "why_useful": "Holland Haven Country Park description.",
+      "confidence": "medium"
+    }
+  ],
+  "youtube_videos": [
+    {
+      "title": "Clacton-on-Sea Essex UK | Town Walk 2025",
+      "channel": "Let's Explore UK",
+      "url": "https://www.youtube.com/watch?v=Pnsm_naDwBw",
+      "topic": "Town and pier walk (2025)",
+      "place_relevance": "Clacton seafront/town overview",
+      "confidence": "high",
+      "notes": "Travel vlog; description mentions contested 'worst places' framing — use for visuals not commentary."
+    },
+    {
+      "title": "Walking on Clacton Pier (Air Show day 2019)",
+      "channel": "EastAngliaUK",
+      "url": "https://www.youtube.com/watch?v=tZB2drnUxfo",
+      "topic": "Pier walk during Air Show",
+      "place_relevance": "Clacton Pier / Airshow atmosphere",
+      "confidence": "high"
+    },
+    {
+      "title": "Walking on Clacton Pier (Feb 2020 works)",
+      "channel": "EastAngliaUK",
+      "url": "https://www.youtube.com/watch?v=UH1QzWm65KE",
+      "topic": "Pier walk / winter works context",
+      "place_relevance": "Clacton Pier",
+      "confidence": "high"
+    },
+    {
+      "title": "Holland-on-Sea to Frinton-on-Sea group walk",
+      "channel": "Coffee morning group walk (YouTube listing)",
+      "url": "https://www.youtube.com/watch?v=OREE7J26dK4",
+      "topic": "Coastal walk Holland to Frinton",
+      "place_relevance": "Holland-on-Sea promenade / day-trip coast",
+      "confidence": "medium",
+      "notes": "Amateur walk vlog; useful for coastal path visuals."
+    },
+    {
+      "title": "Red Arrows display at Clacton Airshow (linked YT id from EastAngliaUK)",
+      "channel": "EastAngliaUK (cross-linked)",
+      "url": "https://www.youtube.com/watch?v=LRIuaCbaN-I",
+      "topic": "Red Arrows at Clacton Airshow",
+      "place_relevance": "Clacton Airshow / seafront",
+      "confidence": "medium",
+      "notes": "URL surfaced via EastAngliaUK Odysee page linking this YouTube id; prefer fewer if unverifiable in-player."
+    }
+  ],
+  "day_trip_notes_frinton_walton": [
+    {
+      "id": "daytrip-frinton",
+      "note": "Frinton-on-Sea: quieter family sandy beach; calm contrast to busier Clacton — short hop from Holland Haven.",
+      "source_url": "https://www.visitessex.com/things-to-do/naze-tower-p1268261",
+      "confidence": "medium"
+    },
+    {
+      "id": "daytrip-walton-naze",
+      "note": "Walton-on-the-Naze: Naze Tower + EWT Discovery Centre + fossil beach — strongest short Tendring day trip from Clacton.",
+      "source_url": "https://www.nazetower.co.uk/",
+      "confidence": "high"
+    }
+  ]
+}
