@@ -326,6 +326,24 @@ function AttractionDetail({
 
           <p className="leading-relaxed text-fg">{a.description}</p>
 
+          <div className="flex items-start gap-2 rounded-lg bg-accent-soft px-3 py-3 text-sm text-accent">
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+            <div className="min-w-0 space-y-1">
+              <span className="block">{a.location}</span>
+              {a.officialUrl && (
+                <a
+                  href={a.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 font-medium underline-offset-2 hover:underline"
+                >
+                  <ExternalLink className="h-3.5 w-3.5" />
+                  Official site
+                </a>
+              )}
+            </div>
+          </div>
+
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[
               { icon: Clock, label: "Duration", value: a.duration },
@@ -383,23 +401,6 @@ function AttractionDetail({
               ))}
             </ul>
           </div>
-
-          <div className="flex items-start gap-2 rounded-lg bg-accent-soft px-3 py-3 text-sm text-accent">
-            <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-            <span>{a.location}</span>
-          </div>
-
-          {a.officialUrl && (
-            <a
-              href={a.officialUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
-            >
-              <ExternalLink className="h-4 w-4" />
-              Official site
-            </a>
-          )}
         </div>
       </div>
     </div>
