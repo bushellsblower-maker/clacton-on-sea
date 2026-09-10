@@ -27,19 +27,19 @@ export const practicalTips: PracticalItem[] = [
   {
     id: "weather",
     title: "Weather & seasons",
-    body: "Tendring markets itself as the Essex Sunshine Coast, and Clacton can be genuinely bright. Summer is peak for the pier, Carnival and Airshow. Spring and autumn are kinder for Jaywick and Colne Point walks. Winter is quiet, with grotto dates and theatre.",
+    body: "Tendring markets itself as the Essex Sunshine Coast, and Clacton can be genuinely bright. Summer is peak for the pier, Carnival and Airshow. Spring and autumn are kinder for Jaywick, Holland Haven and inland woods. Winter is quiet, with grotto dates and theatre.",
     icon: "sun",
   },
   {
     id: "parking",
     title: "Parking",
-    body: "Seafront and town-centre car parks fill early on Airshow (27–28 Aug 2026) and Carnival procession day. Clacton Shopping Village has its own parking on Stephenson Road West. Station drop-off is short-stay — do not leave a car there for the beach.",
+    body: "Seafront and town-centre car parks fill early on Airshow (27–28 Aug 2026) and Carnival procession day. Tendring DC lists Mi Permit codes and lock times — Martello Coach & Car Park locks at night. Fees may have changed for 2025/26; verify on the council pages. Clacton Shopping Village has its own parking on Stephenson Road West. Station drop-off is short-stay.",
     icon: "car",
   },
   {
     id: "safety",
     title: "Sea & event safety",
-    body: "The North Sea is colder than it looks. Observe flags and tide times, especially at Point Clear. Airshow and Carnival close roads and pack the greensward — arrive by train if you can. Colne Point is a sensitive reserve: stay on signed paths.",
+    body: "The North Sea is colder than it looks. Swim between flags; beaches either side of the pier are unsupervised. Observe dog-ban maps (1 May–30 Sep) and tide times. Airshow and Carnival close roads — arrive by train if you can. Colne Point is not casual public access (Essex Wildlife Trust members or prior consent).",
     icon: "shield",
   },
   {

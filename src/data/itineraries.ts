@@ -104,7 +104,7 @@ export const itineraries: Itinerary[] = [
     days: 1,
     vibe: "Adventure",
     summary:
-      "Leave the rides behind: Jaywick sands, a Martello tower, St Osyth Priory and the wild shingle of Colne Point.",
+      "Leave the rides behind: Jaywick sands, a Martello tower, St Osyth Priory (pre-booked tours) and Howlands Marsh.",
     bestFor: ["Walkers", "Photographers", "History fans"],
     stops: [
       {
@@ -127,15 +127,23 @@ export const itineraries: Itinerary[] = [
       },
       {
         time: "15:00",
+        title: "East Essex Aviation Museum (if open)",
+        detail:
+          "Point Clear Martello since 1986. Seasonal Sunday (and some Wednesday) mornings — confirm on the society site before you go.",
+        attractionId: "east-essex-aviation-museum",
+      },
+      {
+        time: "15:45",
         title: "Point Clear Beach",
         detail: "Estuary sand and sailing-club masts — a different sea from the pier.",
         attractionId: "st-osyth-beach",
       },
       {
         time: "16:30",
-        title: "Colne Point (if access is open)",
-        detail: "Shingle SSSI and birds. Stay on signed paths; check Essex Wildlife Trust in nesting season.",
-        attractionId: "colne-point",
+        title: "Howlands Marsh",
+        detail:
+          "EWT grazing marsh and hides. Dogs on the footpath only; tiny lay-by. Colne Point is not a casual public reserve.",
+        attractionId: "howlands-marsh",
       },
     ],
   },
@@ -177,6 +185,51 @@ export const itineraries: Itinerary[] = [
         title: "West Cliff or Princes Theatre",
         detail: "An evening bill if anything good is on — otherwise chips on the front.",
         attractionId: "westcliff-theatre",
+      },
+    ],
+  },
+  {
+    id: "barnfields-base",
+    title: "If you're based near Barnfields / Little Clacton",
+    days: 1,
+    vibe: "Local",
+    summary:
+      "A day from the Weeley Heath–Little Clacton corridor (around CO16 9EF): village church, nearby Wildlife Trust sites, then the shopping village or the pier. Not a listing for the B&B itself.",
+    bestFor: ["Stay inland", "Walkers", "Repeat visitors"],
+    stops: [
+      {
+        time: "09:30",
+        title: "St James' Church, Little Clacton",
+        detail:
+          "A short hop to the flint parish church and village street. Interior opening varies — treat it as a living village.",
+        attractionId: "little-clacton",
+      },
+      {
+        time: "11:00",
+        title: "Great Holland Pits",
+        detail:
+          "Essex Wildlife Trust ponds and woodland on Little Clacton Road. Use the reserve car park, not Mill Lane.",
+        attractionId: "great-holland-pits",
+      },
+      {
+        time: "13:00",
+        title: "Weeleyhall Wood",
+        detail:
+          "Ancient woodland SSSI. Park at Weeley Church (CO16 9AT). Dogs banned 1 March–1 July.",
+        attractionId: "weeleyhall-wood",
+      },
+      {
+        time: "15:00",
+        title: "Clacton Shopping Village",
+        detail: "Covered brands on Stephenson Road West if you want a town stop on the A133.",
+        attractionId: "factory-outlet",
+      },
+      {
+        time: "16:30",
+        title: "Clacton Pier",
+        detail:
+          "The flagship seaside day out from this corridor. Confirm live travel times before you set out.",
+        attractionId: "clacton-pier",
       },
     ],
   },

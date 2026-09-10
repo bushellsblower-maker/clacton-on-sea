@@ -17,6 +17,7 @@ import {
   formatImageCredit,
   getAttributedAttractions,
 } from "@/data/attractions";
+import { researchAttribution } from "@/data/visitor-info";
 
 export type SectionId =
   | "overview"
@@ -236,6 +237,9 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
             </ul>
             <p className="pt-1 text-xs text-fg-on-dark/50">
               Built for travellers · Clacton-on-Sea, Tendring, Essex
+            </p>
+            <p className="text-xs leading-relaxed text-fg-on-dark/45">
+              {researchAttribution}
             </p>
           </div>
         </div>

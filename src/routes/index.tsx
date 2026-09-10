@@ -43,7 +43,12 @@ function HomePage() {
           onNavigate={setSection}
         />
       )}
-      {section === "practical" && <PracticalSection />}
+      {section === "practical" && (
+        <PracticalSection
+          onOpenAttraction={openAttraction}
+          onNavigate={setSection}
+        />
+      )}
       {section === "saved" && (
         <SavedSection
           onNavigate={setSection}

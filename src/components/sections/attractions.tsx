@@ -3,6 +3,7 @@ import {
   Bookmark,
   BookmarkCheck,
   Clock,
+  ExternalLink,
   MapPin,
   Search,
   Star,
@@ -12,6 +13,7 @@ import {
 import {
   attractions,
   CATEGORIES,
+  hasAttractionPhoto,
   type Attraction,
   type AttractionCategory,
 } from "@/data/attractions";
@@ -70,8 +72,9 @@ export function AttractionsSection({
           Places you'll remember
         </h1>
         <p className="max-w-2xl text-fg-muted">
-          From Clacton Pier to Holland-on-Sea, Jaywick, St Osyth Priory and
-          Colne Point — the Tendring coast in one guide.
+          Pier, Holland-on-Sea, Jaywick, St Osyth, inland woods and verified
+          cafés — plus Walton day-trip stops. Colne Point is listed under
+          visitor cautions, not as a casual hotspot.
         </p>
       </header>
 
@@ -118,37 +121,56 @@ export function AttractionsSection({
                 selected?.id === a.id && "ring-2 ring-ring",
               )}
             >
-              <button
-                type="button"
-                className="block w-full text-left"
-                onClick={() => {
-                  setSelected(a);
-                  onClearFocus?.();
-                }}
-              >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <AttractionPhoto attraction={a} />
-                  <PhotoCredit attraction={a} />
-                  <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
-                    <Badge variant="secondary" className="bg-bg-elevated/95">
-                      {a.category}
-                    </Badge>
-                    {a.featured && (
-                      <Badge className="bg-primary text-primary-fg">
-                        Featured
+              {hasAttractionPhoto(a) && (
+                <button
+                  type="button"
+                  className="block w-full text-left"
+                  onClick={() => {
+                    setSelected(a);
+                    onClearFocus?.();
+                  }}
+                >
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <AttractionPhoto attraction={a} />
+                    <PhotoCredit attraction={a} />
+                    <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
+                      <Badge variant="secondary" className="bg-bg-elevated/95">
+                        {a.category}
                       </Badge>
-                    )}
+                      {a.featured && (
+                        <Badge className="bg-primary text-primary-fg">
+                          Featured
+                        </Badge>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              )}
               <CardContent className="space-y-3 p-4">
                 <div className="flex items-start justify-between gap-2">
-                  <div>
+                  <button
+                    type="button"
+                    className="min-w-0 flex-1 text-left"
+                    onClick={() => {
+                      setSelected(a);
+                      onClearFocus?.();
+                    }}
+                  >
+                    {!hasAttractionPhoto(a) && (
+                      <div className="mb-2 flex flex-wrap gap-1.5">
+                        <Badge variant="secondary">{a.category}</Badge>
+                        {a.featured && (
+                          <Badge className="bg-primary text-primary-fg">
+                            Featured
+                          </Badge>
+                        )}
+                      </div>
+                    )}
                     <h3 className="font-display text-lg font-semibold leading-snug">
                       {a.name}
                     </h3>
                     <p className="text-sm text-fg-muted">{a.tagline}</p>
-                  </div>
+                  </button>
                   <Button
                     variant="ghost"
                     size="icon-sm"
@@ -163,12 +185,14 @@ export function AttractionsSection({
                   </Button>
                 </div>
                 <div className="flex flex-wrap gap-3 text-xs text-fg-subtle">
-                  <span className="inline-flex items-center gap-1">
-                    <Star className="h-3.5 w-3.5 fill-warn text-warn" />
-                    <span className="font-medium tabular-nums text-fg">
-                      {a.rating}
+                  {a.rating != null && (
+                    <span className="inline-flex items-center gap-1">
+                      <Star className="h-3.5 w-3.5 fill-warn text-warn" />
+                      <span className="font-medium tabular-nums text-fg">
+                        {a.rating}
+                      </span>
                     </span>
-                  </span>
+                  )}
                   <span className="inline-flex items-center gap-1">
                     <Clock className="h-3.5 w-3.5" />
                     {a.duration}
@@ -274,18 +298,31 @@ function AttractionDetail({
         className="max-h-[92dvh] w-full max-w-2xl overflow-y-auto rounded-t-2xl border border-border bg-bg-elevated shadow-lg sm:rounded-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative aspect-[21/9] sm:aspect-[2/1]">
-          <AttractionPhoto attraction={a} loading="eager" />
-          <PhotoCredit attraction={a} />
-          <button
-            type="button"
-            onClick={onClose}
-            className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-bg-elevated/95 text-fg shadow-sm"
-            aria-label="Close"
-          >
-            <X className="h-5 w-5" />
-          </button>
-        </div>
+        {hasAttractionPhoto(a) ? (
+          <div className="relative aspect-[21/9] sm:aspect-[2/1]">
+            <AttractionPhoto attraction={a} loading="eager" />
+            <PhotoCredit attraction={a} />
+            <button
+              type="button"
+              onClick={onClose}
+              className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-bg-elevated/95 text-fg shadow-sm"
+              aria-label="Close"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+        ) : (
+          <div className="flex items-center justify-end px-4 pt-4">
+            <button
+              type="button"
+              onClick={onClose}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-bg-subtle text-fg"
+              aria-label="Close"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+        )}
         <div className="space-y-5 p-5 sm:p-6">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
@@ -322,15 +359,39 @@ function AttractionDetail({
 
           <p className="leading-relaxed text-fg">{a.description}</p>
 
+          <div className="flex items-start gap-2 rounded-lg bg-accent-soft px-3 py-3 text-sm text-accent">
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+            <div className="min-w-0 space-y-1">
+              <span className="block">{a.location}</span>
+              {a.officialUrl && (
+                <a
+                  href={a.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 font-medium underline-offset-2 hover:underline"
+                >
+                  <ExternalLink className="h-3.5 w-3.5" />
+                  Official site
+                </a>
+              )}
+            </div>
+          </div>
+
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[
               { icon: Clock, label: "Duration", value: a.duration },
               { icon: Wallet, label: "Price", value: a.price },
-              {
-                icon: Star,
-                label: "Rating",
-                value: `${a.rating} (${a.reviews.toLocaleString()})`,
-              },
+              ...(a.rating != null
+                ? [
+                    {
+                      icon: Star,
+                      label: "Rating",
+                      value: a.reviews
+                        ? `${a.rating} (${a.reviews.toLocaleString()})`
+                        : String(a.rating),
+                    },
+                  ]
+                : []),
               { icon: MapPin, label: "Best time", value: a.bestTime },
             ].map((item) => (
               <div key={item.label} className="rounded-lg bg-bg-subtle p-3">
@@ -372,11 +433,6 @@ function AttractionDetail({
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div className="flex items-start gap-2 rounded-lg bg-accent-soft px-3 py-3 text-sm text-accent">
-            <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-            <span>{a.location}</span>
           </div>
         </div>
       </div>

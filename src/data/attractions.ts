@@ -19,10 +19,14 @@ export interface Attraction {
   price: string;
   location: string;
   coords: { lat: number; lng: number };
-  rating: number;
-  reviews: number;
-  image: string;
-  imageAlt: string;
+  /** Omit rather than invent a score. */
+  rating?: number;
+  reviews?: number;
+  /** Official venue or council page, when verified. */
+  officialUrl?: string;
+  /** Commons/Geograph file of this place only. Omit when none exists. */
+  image?: string;
+  imageAlt?: string;
   /** Photographer or rights holder, as required by the image licence. */
   imageCredit?: string;
   /** Short licence label, e.g. "CC BY-SA 4.0" or "CC0". */
@@ -63,6 +67,7 @@ export const attractions: Attraction[] = [
     price: "Free to walk; rides paid",
     location: "1 North Sea, Clacton-on-Sea CO15 1QX",
     coords: { lat: 51.7864, lng: 1.1561 },
+    officialUrl: "https://www.clactonpier.co.uk/",
     rating: 4.4,
     reviews: 11240,
     image:
@@ -97,6 +102,7 @@ export const attractions: Attraction[] = [
     price: "Free",
     location: "Marine Parade West, Clacton-on-Sea",
     coords: { lat: 51.788, lng: 1.155 },
+    officialUrl: "https://discoverclacton.co.uk/place/clacton-seafront-gardens/",
     rating: 4.6,
     reviews: 6840,
     image:
@@ -131,6 +137,7 @@ export const attractions: Attraction[] = [
     price: "Free (hut hire extra)",
     location: "Kings Parade, Holland-on-Sea CO15 5JB",
     coords: { lat: 51.8058, lng: 1.1886 },
+    officialUrl: "https://discoverclacton.co.uk/plan-your-visit/",
     rating: 4.7,
     reviews: 3920,
     image:
@@ -165,6 +172,7 @@ export const attractions: Attraction[] = [
     price: "Ticketed — check the box office",
     location: "Tower Rd, Clacton-on-Sea CO15 1LE",
     coords: { lat: 51.7879, lng: 1.1478 },
+    officialUrl: "https://www.westcliffclacton.co.uk/",
     rating: 4.5,
     reviews: 1680,
     image:
@@ -186,18 +194,19 @@ export const attractions: Attraction[] = [
     category: "Heritage",
     tagline: "Augustinian grandeur in a Tendring village",
     description:
-      "One of Essex's great monastic sites, St Osyth Priory sits a few miles west of Clacton in a village of flint, brick and tidal creeks. The gatehouse and ranges are among the finest surviving Augustinian remains in England — a very different day from the pier.",
+      "Founded c.1121 as an Augustinian house and dissolved in 1539, St Osyth Priory is a Grade I complex a few miles west of Clacton. Public visits are via the Priory & Parish Trust's seasonal guided walking, trailer and nature tours — not free roaming.",
     highlights: [
-      "Medieval priory gatehouse",
-      "Parkland and historic ranges",
-      "Village pubs and church nearby",
+      "Late-15th-century flint gatehouse (Grade I)",
+      "Pre-booked heritage and nature tours",
+      "Village museum nearby in season",
       "Easy hop from Clacton by car or bus",
     ],
     duration: "2–3 hours",
-    bestTime: "Dry days; check open dates",
-    price: "Check current visitor access",
-    location: "The Bury, St Osyth CO16 8NZ",
-    coords: { lat: 51.7992, lng: 1.0786 },
+    bestTime: "Booked tour days in season",
+    price: "Pre-booked tours — not a free open park",
+    location: "Education Centre, Colchester Road, St Osyth CO16 8HA",
+    coords: { lat: 51.7992, lng: 1.0749 },
+    officialUrl: "https://www.stosythprioryandparishtrust.org/visit/",
     rating: 4.6,
     reviews: 2140,
     image:
@@ -207,8 +216,8 @@ export const attractions: Attraction[] = [
     imageLicense: "CC BY-SA 2.0",
     imageSourceUrl: "https://www.geograph.org.uk/photo/5576207",
     tips: [
-      "Access and events change — confirm before you set out",
-      "Pair with Point Clear beach or Colne Point if you want sea air after",
+      "Book via the Priory & Parish Trust — the estate is not a free open park",
+      "Pair with Point Clear beach or Howlands Marsh if you want estuary air after",
       "The village centre is compact; park considerately on event days",
     ],
     tags: ["history", "architecture", "day-trip", "heritage"],
@@ -225,7 +234,7 @@ export const attractions: Attraction[] = [
       "Estuary views towards Brightlingsea",
       "Quieter swimming and beachcombing",
       "Holiday-park and village setting",
-      "Gateway walks towards Colne Point",
+      "Estuary setting west of Jaywick",
     ],
     duration: "1–3 hours",
     bestTime: "Low tide for the widest beach",
@@ -265,6 +274,7 @@ export const attractions: Attraction[] = [
     price: "Free",
     location: "Brooklands, Jaywick CO15 2EX",
     coords: { lat: 51.7758, lng: 1.1164 },
+    officialUrl: "https://www.visitjaywicksands.com/see-and-do",
     rating: 4.3,
     reviews: 1420,
     image:
@@ -276,7 +286,7 @@ export const attractions: Attraction[] = [
     tips: [
       "Walk or cycle the sea wall from Clacton rather than driving if you can",
       "This is a living neighbourhood — be a considerate guest",
-      "Continue west to the Martello tower for a fuller picture",
+      "Public toilets are not at the beach waterline — plan a stop before you settle on the sand",
     ],
     tags: ["beach", "local", "walking", "free"],
   },
@@ -298,6 +308,8 @@ export const attractions: Attraction[] = [
     price: "Exterior free; interior by event",
     location: "The Promenade, Jaywick CO15 2LF",
     coords: { lat: 51.7732, lng: 1.1038 },
+    officialUrl:
+      "https://www.explore-essex.com/places-to-go/find-whats-near-me/jaywick-martello-tower",
     rating: 4.5,
     reviews: 640,
     image:
@@ -319,7 +331,7 @@ export const attractions: Attraction[] = [
     category: "Heritage",
     tagline: "A quiet Tendring village inland of the resort",
     description:
-      "Little Clacton is the older agricultural neighbour a couple of miles inland — flint church, village green, and a slower rhythm than the seafront. St James's is the landmark: a parish church that has watched the fields long before the pier was built.",
+      "Little Clacton is the older agricultural neighbour a couple of miles inland — flint church, village green, and a slower rhythm than the seafront. The parish appears in the Domesday Book; St James's is the landmark that watched the fields long before the pier was built.",
     highlights: [
       "Medieval parish church of St James",
       "Village pubs and green",
@@ -331,6 +343,7 @@ export const attractions: Attraction[] = [
     price: "Free to visit the village",
     location: "The Street, Little Clacton CO16 9LQ",
     coords: { lat: 51.8256, lng: 1.1418 },
+    officialUrl: "https://www.littleclactonparishcouncil.gov.uk/little-clacton",
     rating: 4.4,
     reviews: 310,
     image:
@@ -364,6 +377,7 @@ export const attractions: Attraction[] = [
     price: "Free to enter",
     location: "Stephenson Rd W, Clacton-on-Sea CO15 4TL",
     coords: { lat: 51.8078, lng: 1.1556 },
+    officialUrl: "https://clactonshoppingvillage.com/",
     rating: 4.1,
     reviews: 4560,
     image:
@@ -378,40 +392,6 @@ export const attractions: Attraction[] = [
       "Local buses run from the town centre if you are car-free",
     ],
     tags: ["shopping", "indoor", "family", "rainy-day"],
-  },
-  {
-    id: "colne-point",
-    name: "Colne Point Nature Reserve",
-    category: "Nature",
-    tagline: "Shingle, saltmarsh and estuary birds",
-    description:
-      "Colne Point is an Essex Wildlife Trust reserve on the shingle spit at the mouth of the Colne. It is one of the wildest corners of the Tendring coast — breeding terns, specialised shingle plants, and a reminder that this shoreline is more than a holiday beach.",
-    highlights: [
-      "SSSI shingle and saltmarsh",
-      "Birdwatching at the Colne mouth",
-      "Rare coastal flora",
-      "Wild contrast to the pier",
-    ],
-    duration: "2–4 hours",
-    bestTime: "Migration seasons; quiet weekdays",
-    price: "Free (trust membership welcome)",
-    location: "Point Clear / St Osyth, access via signed paths",
-    coords: { lat: 51.7768, lng: 1.0412 },
-    rating: 4.7,
-    reviews: 420,
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a2/Part_of_Colne_Point_SSSI_-_geograph.org.uk_-_7504432.jpg",
-    imageAlt: "Shingle and saltmarsh at Colne Point SSSI",
-    imageCredit: "Glyn Baker",
-    imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/7504432",
-    tips: [
-      "Stay on signed paths — this is a sensitive breeding site",
-      "Access can be restricted in the nesting season; check EWT before you go",
-      "Binoculars and sturdy shoes beat flip-flops",
-    ],
-    tags: ["wildlife", "walking", "nature", "free"],
-    featured: true,
   },
   {
     id: "pickers-ditch",
@@ -447,6 +427,501 @@ export const attractions: Attraction[] = [
     ],
     tags: ["walking", "local", "free", "nature"],
   },
+  {
+    id: "princes-theatre",
+    name: "Princes Theatre",
+    category: "Culture",
+    tagline: "820-seat theatre in Grade II Town Hall",
+    description:
+      "Opened 14 April 1931 by Prince Arthur of Connaught inside Clacton Town Hall (Sir A. Brumwell Thomas). Capacity is now 820, with more than 150 shows and events a year according to the venue's own history.",
+    highlights: [
+      "Grade II Town Hall setting",
+      "Town-centre touring acts",
+      "Larger auditorium than West Cliff",
+    ],
+    duration: "2–3 hours",
+    bestTime: "Evening performances",
+    price: "Ticketed — check the box office",
+    location: "Clacton Town Hall, Station Road, CO15 1SE",
+    coords: { lat: 51.7915, lng: 1.1538 },
+    officialUrl: "https://princestheatre.co.uk/",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/dd/Clacton_Town_Hall_looking_south-west_%28geograph_5668500%29.jpg",
+    imageAlt: "Clacton Town Hall looking south-west, home of Princes Theatre",
+    imageCredit: "Duncan Graham",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/5668500",
+    tips: [
+      "Confirm the bill and access at princestheatre.co.uk",
+      "Wellesley Road car park is the large town-centre option nearby",
+      "West Cliff Theatre on Tower Road is the smaller seaside alternative",
+    ],
+    tags: ["theatre", "evening", "indoor", "culture"],
+  },
+  {
+    id: "clacton-museum",
+    name: "Clacton Museum",
+    category: "Heritage",
+    tagline: "Free local history museum above the library",
+    description:
+      "Displays on the resort since 1871, pier entertainment, Butlin's and Great Clacton. Discover Clacton lists free entry and very limited hours (Tuesday and Saturday mornings at research time).",
+    highlights: [
+      "Free entry",
+      "Seaside heritage",
+      "Second floor of Clacton Library",
+    ],
+    duration: "45–90 mins",
+    bestTime: "Confirm opening before you go",
+    price: "Free",
+    location: "2nd Floor, Clacton Library, 96 Station Road, CO15 1SF",
+    coords: { lat: 51.7912, lng: 1.153 },
+    officialUrl: "https://discoverclacton.co.uk/place/clacton-museum/",
+    tips: [
+      "Hours are very limited — confirm on Discover Clacton before you climb the stairs",
+      "Pair with Princes Theatre next door in Town Hall",
+    ],
+    tags: ["museum", "free", "indoor", "heritage"],
+  },
+  {
+    id: "clacton-pavilion",
+    name: "Clacton Pavilion",
+    category: "Family",
+    tagline: "Seafront fun park, bowling and dining",
+    description:
+      "Marine Parade East complex with a fun park, bowling and restaurants beside the pier. The operator notes that outdoor hours are weather-dependent.",
+    highlights: ["Fun park", "Bowling", "Beside the pier"],
+    duration: "1–3 hours",
+    bestTime: "Fine-weather afternoons",
+    price: "Check clactonpavilion.co.uk — outdoor hours weather-governed",
+    location: "Marine Parade East, CO15 1PT",
+    coords: { lat: 51.7862, lng: 1.1568 },
+    officialUrl: "https://clactonpavilion.co.uk/",
+    tips: [
+      "Confirm fun-park hours on the operator site — they follow the weather",
+    ],
+    tags: ["family", "seafront", "indoor", "rides"],
+  },
+  {
+    id: "hastys-adventure-farm",
+    name: "Hasty's Adventure Farm",
+    category: "Family",
+    tagline: "Family farm park beside the airfield",
+    description:
+      "Opened in 2016 on West Road with animals, outdoor play and a large undercover adventure zone. Served by buses 4 and X76.",
+    highlights: ["Animals and play", "Undercover adventure zone", "Next to the airfield"],
+    duration: "2–4 hours",
+    bestTime: "School holidays; check opening",
+    price: "Paid — see hastys.co.uk",
+    location: "West Road, CO15 1AG",
+    coords: { lat: 51.7868, lng: 1.1285 },
+    officialUrl: "https://www.hastys.co.uk/",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/7/70/Hasty%27s_Adventure_Farm_-_geograph.org.uk_-_7530397.jpg",
+    imageAlt: "Hasty's Adventure Farm on West Road, Clacton",
+    imageCredit: "Glyn Baker",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/7530397",
+    tips: [
+      "Plan-your-visit notes are on hastys.co.uk",
+      "Martello Coach & Car Park on West Road locks at night",
+    ],
+    tags: ["family", "indoor", "animals", "play"],
+  },
+  {
+    id: "clacton-airfield",
+    name: "Clacton Airfield / Aero Club",
+    category: "Family",
+    tagline: "Grass airfield — trial lessons and pleasure flights",
+    description:
+      "Clacton Aero Club has operated since 1988, offering pleasure flights and trial lessons from an unlicensed general-aviation field used for training and recreation.",
+    highlights: ["Trial lessons", "Coastal views", "Beside Hasty's"],
+    duration: "1–2 hours",
+    bestTime: "Clear, settled weather — book ahead",
+    price: "Book ahead; flights are weather-dependent",
+    location: "West Road, CO15 1AG",
+    coords: { lat: 51.786, lng: 1.126 },
+    officialUrl: "https://www.clactonaeroclub.co.uk/",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/Clacton-on-Sea%2C_Clacton_Airfield_airstrip_%282%29_-_geograph.org.uk_-_5959307.jpg",
+    imageAlt: "Clacton Airfield grass airstrip",
+    imageCredit: "Nigel Cox",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/5959307",
+    tips: [
+      "Flights depend on weather — book and confirm with the Aero Club",
+      "Not a drop-in spectator airfield; treat it as a booked activity",
+    ],
+    tags: ["flights", "family", "booking"],
+  },
+  {
+    id: "martello-bay-beach",
+    name: "Martello Bay Beach",
+    category: "Coast & Cliffs",
+    tagline: "Award beach with seasonal lifeguards",
+    description:
+      "Sandy beach on Marine Parade West. Tendring DC posts seasonal lifeguards (typically May half-term through summer-holiday weekends and holidays, 10:30–17:30) and a May–September dog ban on the award area. Cover is staffing-dependent.",
+    highlights: [
+      "Seasonal lifeguard cover",
+      "Near the RNLI station",
+      "Dog ban May–September on the award beach",
+    ],
+    duration: "1–3 hours",
+    bestTime: "Lifeguarded hours in season",
+    price: "Free",
+    location: "Marine Parade West, CO15 1NW",
+    coords: { lat: 51.7835, lng: 1.145 },
+    officialUrl:
+      "https://www.tendringdc.gov.uk/beaches/martello-bay-clacton-co15-1bn",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d3/Martello_Bay%2C_Clacton_Seafront.jpg",
+    imageAlt: "Martello Bay on the Clacton seafront",
+    imageCredit: "Colin21958",
+    imageLicense: "CC BY-SA 4.0",
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Martello_Bay,_Clacton_Seafront.jpg",
+    tips: [
+      "Beaches either side of Clacton Pier are unsupervised — Tendring DC points swimmers here instead",
+      "West Greensward toilets (year-round, Changing Places) sit behind this stretch",
+      "Martello Coach & Car Park on West Road locks at night",
+    ],
+    tags: ["beach", "lifeguard", "free", "family"],
+  },
+  {
+    id: "st-osyth-museum",
+    name: "St Osyth Museum",
+    category: "Heritage",
+    tagline: "Village museum behind the wall",
+    description:
+      "Village history at the Education Centre shared with Priory tours. Official site: Saturday–Sunday 12:00–16:00, Easter to the end of October.",
+    highlights: ["Village history", "Weekend seasonal opening", "Shared site with Priory tours"],
+    duration: "45–90 mins",
+    bestTime: "Weekend afternoons in season",
+    price: "Check stosythmuseum.co.uk",
+    location: "Behind the Wall, Colchester Road, CO16 8HA",
+    coords: { lat: 51.7985, lng: 1.0775 },
+    officialUrl: "https://www.stosythmuseum.co.uk/",
+    tips: [
+      "Weekend-only in season — confirm on the museum site",
+    ],
+    tags: ["museum", "village", "heritage", "seasonal"],
+  },
+  {
+    id: "east-essex-aviation-museum",
+    name: "East Essex Aviation Society & Museum",
+    category: "Heritage",
+    tagline: "WWII aviation museum in the Point Clear Martello",
+    description:
+      "In Point Clear Martello Tower since 1986; displays include remains of a USAAF P-51 Mustang ditched off Clacton on 13 January 1945. Typical hours at research time: April–October Sundays 10:00–14:00; June–September also Wednesdays 10:00–14:00. Donation entry — confirm hours before you go.",
+    highlights: ["Martello setting", "P-51 display", "Donation entry"],
+    duration: "45–90 mins",
+    bestTime: "Sunday mornings in season; confirm before travel",
+    price: "Donations — confirm opening",
+    location: "Martello Tower, Point Clear, CO16 8LW",
+    coords: { lat: 51.783, lng: 1.055 },
+    officialUrl: "http://www.eastessexaviationsociety.org/",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Martello_Tower_at_Point_Clear_-_geograph.org.uk_-_743766.jpg",
+    imageAlt:
+      "Martello Tower at Point Clear, housing the East Essex Aviation Society Museum",
+    imageCredit: "Oxyman",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/743766",
+    tips: [
+      "Hours are seasonal and were listed as typical at research time — confirm on the society site or social pages",
+      "This is the Point Clear Martello, not the village museum at the Education Centre",
+    ],
+    tags: ["museum", "heritage", "point-clear"],
+  },
+  {
+    id: "naze-tower",
+    name: "Naze Tower",
+    category: "Heritage",
+    tagline: "1720 Trinity House tower — a Walton day trip",
+    description:
+      "Grade II* 86 ft octagonal navigation mark built by Trinity House in 1720. Gallery, museum, tea rooms and roof. Typically late March–early November, daily 10:00–17:00. Stairs are not step-free.",
+    highlights: ["Roof views", "Museum and tea rooms", "Beside the Naze cliffs"],
+    duration: "1–2 hours",
+    bestTime: "Seasonal daily opening; confirm before travel",
+    price: "Ticketed — see nazetower.co.uk",
+    location: "Old Hall Lane, Walton-on-the-Naze, CO14 8LE",
+    coords: { lat: 51.866, lng: 1.288 },
+    officialUrl: "https://www.nazetower.co.uk/",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4e/The_Naze_Tower.jpg",
+    imageAlt: "The Naze Tower at Walton-on-the-Naze",
+    imageCredit: "Michael Coppins",
+    imageLicense: "CC BY-SA 4.0",
+    imageSourceUrl: "https://commons.wikimedia.org/wiki/File:The_Naze_Tower.jpg",
+    tips: [
+      "Pair with the Naze Nature Discovery Centre next door",
+      "Cliffs erode 1–2 m a year — stay on signed paths and do not dig",
+      "Naze Car Park (Mi Permit 706004) serves the site",
+    ],
+    tags: ["day-trip", "heritage", "views", "walton"],
+    featured: true,
+  },
+  {
+    id: "clacton-heritage-trail",
+    name: "Clacton Heritage Trail (Clacton 150)",
+    category: "Heritage",
+    tagline: "5-mile seafront trail with 19 signs",
+    description:
+      "A National Lottery Heritage Fund trail (2021) from Sunspot in Jaywick to Borrow Pit Bay at Holland-on-Sea, with 19 interpretation points and augmented reality at some stops via Zappar.",
+    highlights: ["19 interpretation signs", "Seafront walk", "AR at some points"],
+    duration: "2–4 hours",
+    bestTime: "A dry half-day on the promenade",
+    price: "Free",
+    location: "Seafront from Jaywick Sunspot to Holland-on-Sea",
+    coords: { lat: 51.788, lng: 1.155 },
+    officialUrl: "https://essex-sunshine-coast.org.uk/places/trails-of-tendring/",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/7/77/Seafront_Gardens%2C_Clacton-on-Sea_-_geograph.org.uk_-_3587277.jpg",
+    imageAlt: "Clacton seafront gardens, on the Clacton Heritage Trail",
+    imageCredit: "David Dixon",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/3587277",
+    tips: [
+      "Start wherever suits — Jaywick, the pier gardens or Holland",
+      "Some signs include a Zappar AR layer",
+    ],
+    tags: ["walking", "free", "heritage", "seafront"],
+  },
+  {
+    id: "toast-coffee",
+    name: "TOAST Coffee Clacton",
+    category: "Food & Drink",
+    tagline: "Essex speciality coffee on Pier Avenue",
+    description:
+      "Independent Essex coffee brand at 73–75 Pier Avenue. Official hours at research time: Monday–Saturday 08:00–17:00, Sunday 09:00–16:00.",
+    highlights: ["Speciality coffee", "Brunch and lunch", "Pier Avenue"],
+    duration: "30–60 mins",
+    bestTime: "Morning coffee or a mid-shop pause",
+    price: "Café prices — see lovetoast.co.uk",
+    location: "73–75 Pier Avenue, CO15 1QE",
+    coords: { lat: 51.7895, lng: 1.1545 },
+    officialUrl:
+      "https://www.lovetoast.co.uk/blog/our-7th-store-opens-in-clacton-on-sea",
+    tips: [
+      "Confirm current hours on the TOAST site before a Sunday visit",
+    ],
+    tags: ["coffee", "brunch", "town"],
+  },
+  {
+    id: "martello-lounge",
+    name: "Martello Lounge",
+    category: "Food & Drink",
+    tagline: "Seafront Lounge café-bar by the pier",
+    description:
+      "Lounges-group café-bar in the Atlanta Building, Kings Promenade. Official page at research time: Sunday–Thursday 09:00–22:00, Friday–Saturday 09:00–23:00.",
+    highlights: ["Seafront terraces", "All-day menu", "Beside the pier"],
+    duration: "1–2 hours",
+    bestTime: "Lunch through evening",
+    price: "Café-bar prices — see thelounges.co.uk/martello",
+    location: "Atlanta Building, Kings Promenade, CO15 1FS",
+    coords: { lat: 51.786, lng: 1.1555 },
+    officialUrl: "https://thelounges.co.uk/martello/",
+    tips: [
+      "Confirm hours on the Lounge page — Friday and Saturday run later",
+    ],
+    tags: ["cafe", "seafront", "evening"],
+  },
+  {
+    id: "grandma-lillys",
+    name: "Grandma Lilly's Tea Rooms",
+    category: "Food & Drink",
+    tagline: "Family tea rooms since 1997",
+    description:
+      "Frinton Road tea rooms in Holland-on-Sea. Official site at research time: Tuesday–Saturday 09:00–16:00; closed Monday and Sunday.",
+    highlights: ["Afternoon tea", "Established 1997", "Near Holland seafront"],
+    duration: "45–90 mins",
+    bestTime: "Tuesday–Saturday daytime",
+    price: "Tea-room prices — see grandmalillys.co.uk",
+    location: "34–36 Frinton Road, Holland-on-Sea, CO15 5UL",
+    coords: { lat: 51.8035, lng: 1.1885 },
+    officialUrl: "https://grandmalillys.co.uk/",
+    tips: [
+      "Closed Monday and Sunday per the official site — confirm before you go",
+    ],
+    tags: ["tea", "holland", "daytime"],
+  },
+  {
+    id: "charnallies",
+    name: "Charnallies",
+    category: "Food & Drink",
+    tagline: "American-themed family restaurant near the pier",
+    description:
+      "Official site: breakfast through dinner, gluten-free and vegan menus, and a dog-friendly section. Reviews continue into 2026.",
+    highlights: ["All-day dining", "Dog-friendly section", "Near the pier"],
+    duration: "1–2 hours",
+    bestTime: "Breakfast through evening",
+    price: "Restaurant prices — see charnallies.co.uk",
+    location: "1–5 Pier Avenue, CO15 1QB",
+    coords: { lat: 51.7875, lng: 1.155 },
+    officialUrl: "https://charnallies.co.uk/",
+    tips: [
+      "Check the official menu and hours before you book a large group",
+    ],
+    tags: ["restaurant", "family", "dog-friendly"],
+  },
+  {
+    id: "roaring-donkey",
+    name: "The Roaring Donkey",
+    category: "Food & Drink",
+    tagline: "Hungry Horse family pub on Holland Road",
+    description:
+      "316 Holland Road: beer garden, outdoor play and a short hop from Kings Parade. Operated as a Hungry Horse.",
+    highlights: ["Family menu", "Beer garden", "Near the promenade"],
+    duration: "1–2 hours",
+    bestTime: "Lunch or early evening",
+    price: "Pub prices — see hungryhorse.co.uk",
+    location: "316 Holland Road, CO15 6PD",
+    coords: { lat: 51.797, lng: 1.175 },
+    officialUrl: "https://www.hungryhorse.co.uk/pubs/essex/roaring-donkey",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/c/c5/%27The_Roaring_Donkey%27_public_house_-_geograph.org.uk_-_254496.jpg",
+    imageAlt: "The Roaring Donkey public house on Holland Road",
+    imageCredit: "Robert Edwards",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/254496",
+    tips: [
+      "Confirm kitchen hours on the Hungry Horse page",
+    ],
+    tags: ["pub", "family", "holland"],
+  },
+  {
+    id: "holland-haven",
+    name: "Holland Haven Country Park",
+    category: "Nature",
+    tagline: "Coastal marsh LNR with bird hides",
+    description:
+      "Tendring District Council country park, part of Holland Haven Marshes SSSI. Hides and picnic space; satnav often CO15 5TZ. The wider SSSI is largely private — stay on country-park paths.",
+    highlights: ["Bird hides", "SSSI flora and fauna", "Coastal walks"],
+    duration: "1–3 hours",
+    bestTime: "Migration seasons; quiet weekdays",
+    price: "Free (car park is pay-and-display)",
+    location: "Holland Haven, Holland-on-Sea",
+    coords: { lat: 51.80785, lng: 1.20911 },
+    officialUrl:
+      "https://legacy.tendringdc.gov.uk/leisure/countryside-parks-gardens/nature-and-countryside",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6d/Holland_Haven_Country_Park_-_view_from_bird_hide_2.jpg",
+    imageAlt: "View from a bird hide at Holland Haven Country Park",
+    imageCredit: "Dudley Miles",
+    imageLicense: "CC BY-SA 4.0",
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Holland_Haven_Country_Park_-_view_from_bird_hide_2.jpg",
+    tips: [
+      "Stay on signed country-park routes — much of the SSSI is private",
+      "Holland Haven Car Park is Mi Permit 706016; toilets at Holland Gap are seasonal",
+    ],
+    tags: ["wildlife", "walking", "nature", "free"],
+    featured: true,
+  },
+  {
+    id: "howlands-marsh",
+    name: "Howlands Marsh",
+    category: "Nature",
+    tagline: "Essex Wildlife Trust coastal grazing marsh",
+    description:
+      "74 hectares of coastal grazing marsh at St Osyth. Footpath plus stilts hides; dogs on a lead on the public footpath only, with no access to the grazed fields. The lay-by holds only three or four cars.",
+    highlights: ["Winter wildfowl", "Marsh harriers", "Two hides"],
+    duration: "1–2 hours",
+    bestTime: "Winter for wildfowl; quiet weekdays",
+    price: "Free (trust membership welcome)",
+    location: "B1027 Colchester Road, St Osyth, CO16 8HW",
+    coords: { lat: 51.805, lng: 1.055 },
+    officialUrl: "https://www.essexwt.org.uk/nature-reserves/howlands-marsh",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/Howlands_Marsh_SSSI_-_geograph.org.uk_-_666475.jpg",
+    imageAlt: "Howlands Marsh SSSI",
+    imageCredit: "John Lemay",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/666475",
+    tips: [
+      "Dogs on the public footpath only, on leads",
+      "Tiny lay-by — do not block the B1027",
+    ],
+    tags: ["wildlife", "walking", "nature", "ewt"],
+  },
+  {
+    id: "great-holland-pits",
+    name: "Great Holland Pits",
+    category: "Nature",
+    tagline: "Former gravel pits — a wildlife haven",
+    description:
+      "13 hectares of ponds, woodland and grassland on Little Clacton Road. Open always; small car park on site. Do not park on Mill Lane.",
+    highlights: ["Ponds", "Butterflies", "Near Little Clacton"],
+    duration: "1–2 hours",
+    bestTime: "Late spring and summer",
+    price: "Free (trust membership welcome)",
+    location: "Little Clacton Road, Great Holland, CO13 0EU",
+    coords: { lat: 51.82, lng: 1.205 },
+    officialUrl: "https://www.essexwt.org.uk/nature-reserves/great-holland-pits",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/5/5f/Great_Holland_Pits_-_geograph.org.uk_-_1336458.jpg",
+    imageAlt: "Great Holland Pits",
+    imageCredit: "Glyn Baker",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/1336458",
+    tips: [
+      "Use the reserve car park — not Mill Lane",
+      "Handy if you are based near Little Clacton or Weeley Heath",
+    ],
+    tags: ["wildlife", "walking", "nature", "ewt"],
+  },
+  {
+    id: "weeleyhall-wood",
+    name: "Weeleyhall Wood",
+    category: "Nature",
+    tagline: "Ancient woodland SSSI near Weeley",
+    description:
+      "32 hectares of ancient woodland. Bluebells and nightingales. Dogs are banned 1 March–1 July and must be on leads 1 July–1 March. Park at Weeley Church, CO16 9AT.",
+    highlights: ["Bluebells", "Nightingales", "Ancient oak"],
+    duration: "1–2 hours",
+    bestTime: "April–May for bluebells",
+    price: "Free (trust membership welcome)",
+    location: "Church Lane, Weeley, CO16 9AT",
+    coords: { lat: 51.855, lng: 1.135 },
+    officialUrl: "https://www.essexwt.org.uk/nature-reserves/weeleyhall-wood",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Weeley_Hall_Wood_-_geograph.org.uk_-_1335020.jpg",
+    imageAlt: "Weeley Hall Wood",
+    imageCredit: "Glyn Baker",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/1335020",
+    tips: [
+      "Park in front of Weeley Church and walk Church Lane — do not block residents",
+      "Leave dogs at home from 1 March to 1 July",
+    ],
+    tags: ["woodland", "walking", "nature", "ewt"],
+  },
+  {
+    id: "naze-nature-centre",
+    name: "Naze Nature Discovery Centre",
+    category: "Nature",
+    tagline: "Essex Wildlife Trust centre for fossils and coastal walks",
+    description:
+      "Café, shop and education space at Walton-on-the-Naze. The Naze cliffs (SSSI) erode about 1–2 m a year. Geowalk on site; open all year. Check tides and do not dig the cliffs.",
+    highlights: ["Fossil hunting on the beach", "Café views", "John Weston reserve"],
+    duration: "2–4 hours",
+    bestTime: "Low tide for the beach; any season for the centre",
+    price: "Centre free to enter; café extra",
+    location: "Old Hall Lane, Walton, CO14 8LE",
+    coords: { lat: 51.8641, lng: 1.2877 },
+    officialUrl: "https://www.essexwt.org.uk/nature-reserves/naze",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/c/ce/The_Naze_Visitor_Centre_-_geograph.org.uk_-_5386466.jpg",
+    imageAlt: "The Naze Visitor Centre, managed by Essex Wildlife Trust",
+    imageCredit: "Glyn Baker",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/5386466",
+    tips: [
+      "Use the Crag Walk platform; do not dig the cliffs",
+      "Pair with Naze Tower next door in season",
+      "Naze Car Park is Mi Permit 706004",
+    ],
+    tags: ["wildlife", "fossils", "day-trip", "walton"],
+  },
 ];
 
 export function getFeaturedAttractions() {
@@ -461,9 +936,19 @@ export function isCc0License(license?: string) {
   return Boolean(license?.toUpperCase().startsWith("CC0"));
 }
 
+export function hasAttractionPhoto(
+  attraction: Pick<Attraction, "image">,
+): attraction is Pick<Attraction, "image"> & { image: string } {
+  return Boolean(attraction.image);
+}
+
 /** CC BY / CC BY-SA (and similar) require visible credit; CC0 does not. */
 export function requiresImageAttribution(attraction: Attraction) {
-  return Boolean(attraction.imageCredit && !isCc0License(attraction.imageLicense));
+  return Boolean(
+    attraction.image &&
+      attraction.imageCredit &&
+      !isCc0License(attraction.imageLicense),
+  );
 }
 
 export function formatImageCredit(attraction: Attraction) {
@@ -493,6 +978,7 @@ export function displayAttractionImage(
   attraction: Pick<Attraction, "image">,
   width: CommonsThumbWidth = 960,
 ) {
+  if (!attraction.image) return "";
   const match = attraction.image.match(COMMONS_FILE);
   if (!match) return attraction.image;
   const [, dir, sub, filename] = match;

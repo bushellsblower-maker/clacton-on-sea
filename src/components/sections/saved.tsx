@@ -1,5 +1,5 @@
 import { Bookmark, CalendarDays, Map } from "lucide-react";
-import { attractions } from "@/data/attractions";
+import { attractions, hasAttractionPhoto } from "@/data/attractions";
 import { AttractionPhoto } from "@/components/attraction-photo";
 import {
   buildYearEvents,
@@ -80,10 +80,18 @@ export function SavedSection({ onNavigate, onOpenAttraction }: SavedProps) {
             {savedPlaces.map((a) => (
               <Card key={a.id}>
                 <CardContent className="flex gap-3 p-3">
-                  <AttractionPhoto
-                    attraction={a}
-                    className="h-20 w-24 shrink-0 rounded-lg"
-                  />
+                  {hasAttractionPhoto(a) ? (
+                    <AttractionPhoto
+                      attraction={a}
+                      className="h-20 w-24 shrink-0 rounded-lg"
+                    />
+                  ) : (
+                    <div className="flex h-20 w-24 shrink-0 items-end rounded-lg bg-bg-subtle px-2 py-1.5">
+                      <span className="text-[10px] font-medium text-fg-subtle">
+                        {a.category}
+                      </span>
+                    </div>
+                  )}
                   <div className="min-w-0 flex-1">
                     <Badge variant="outline" className="mb-1">
                       {a.category}
