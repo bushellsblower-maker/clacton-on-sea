@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import {
-  Shell,
-  isSectionId,
-  type SectionId,
-} from "@/components/layout/shell";
+import { Shell } from "@/components/layout/shell";
+import { isSectionId, type SectionId } from "@/components/layout/sections";
 import { OverviewSection } from "@/components/sections/overview";
 import { AttractionsSection } from "@/components/sections/attractions";
 import { EventsSection } from "@/components/sections/events";

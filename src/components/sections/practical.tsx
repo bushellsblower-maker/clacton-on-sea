@@ -32,7 +32,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { LucideIcon } from "lucide-react";
-import { GUIDE_NAV, type SectionId } from "@/components/layout/shell";
+import { GUIDE_NAV, type SectionId } from "@/components/layout/sections";
 
 const ICONS: Record<string, LucideIcon> = {
   train: Train,

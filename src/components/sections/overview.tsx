@@ -7,7 +7,7 @@ import {
   Sun,
 } from "lucide-react";
 import { WeatherForecast } from "@/components/weather-forecast";
-import { GUIDE_NAV } from "@/components/layout/shell";
+import { GUIDE_NAV } from "@/components/layout/sections";
 import { format } from "date-fns";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -29,7 +29,7 @@ import {
 import { itineraries } from "@/data/itineraries";
 import { quickFacts } from "@/data/practical";
 import { historyFacts } from "@/data/visitor-info";
-import type { SectionId } from "@/components/layout/shell";
+import type { SectionId } from "@/components/layout/sections";
 
 interface OverviewProps {
   onNavigate: (id: SectionId) => void;
