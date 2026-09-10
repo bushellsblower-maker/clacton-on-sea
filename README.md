@@ -54,7 +54,8 @@ No Unsplash placeholders.
 - **Airshow 2026:** Thursday 27 & Friday 28 August, seafront; twilight display on the Thursday. Confirm at [clactonairshow.com](https://clactonairshow.com/).
 - **Carnival 2026:** Week from 7 August; street procession Saturday 8 August; Sunday show 9 August; run events 17 August. Confirm at [clactoncarnival.org](http://www.clactoncarnival.org/eventscw.htm).
 - **Shopping:** Use **Clacton Shopping Village** (Stephenson Road West), not “Factory Outlet”, in visitor-facing copy.
-- Clacton Pavilion uses the adjoining pier photograph (no modern Commons photo of the Pavilion building).
+- Cards without a Commons/Geograph photo of the named place have no hero image (TOAST, Martello Lounge, Grandma Lilly's, Charnallies, Clacton Pavilion, St Osyth Museum).
+- The Roaring Donkey uses a Geograph exterior of that pub. Hasty's, Naze Visitor Centre, Town Hall / Princes Theatre and the nature sites use named Commons/Geograph files.
 - **Colne Point** is listed under visitor cautions (restricted access), not as a casual hotspot.
 - **Research pack:** visitor facts, toilets, parking, cautions and links are derived from `docs/research` dated 2026-09-10. Confirm hours and fees before travel.
 - Food cards use related street or seafront Commons/Geograph photos with honest alt text — never Unsplash, never fake café interiors.

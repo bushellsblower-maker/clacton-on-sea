@@ -24,8 +24,9 @@ export interface Attraction {
   reviews?: number;
   /** Official venue or council page, when verified. */
   officialUrl?: string;
-  image: string;
-  imageAlt: string;
+  /** Commons/Geograph file of this place only. Omit when none exists. */
+  image?: string;
+  imageAlt?: string;
   /** Photographer or rights holder, as required by the image licence. */
   imageCredit?: string;
   /** Short licence label, e.g. "CC BY-SA 4.0" or "CC0". */
@@ -501,16 +502,8 @@ export const attractions: Attraction[] = [
     location: "Marine Parade East, CO15 1PT",
     coords: { lat: 51.7862, lng: 1.1568 },
     officialUrl: "https://clactonpavilion.co.uk/",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/1/11/Clacton-on-Sea%2C_Clacton_Pier_%284%29_-_geograph.org.uk_-_6417513.jpg",
-    imageAlt:
-      "Clacton Pier and seafront beside the Pavilion on Marine Parade East",
-    imageCredit: "Nigel Cox",
-    imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/6417513",
     tips: [
       "Confirm fun-park hours on the operator site — they follow the weather",
-      "No separate modern Commons photo of the Pavilion building; this card shows the adjoining pier",
     ],
     tags: ["family", "seafront", "indoor", "rides"],
   },
@@ -613,15 +606,8 @@ export const attractions: Attraction[] = [
     location: "Behind the Wall, Colchester Road, CO16 8HA",
     coords: { lat: 51.7985, lng: 1.0775 },
     officialUrl: "https://www.stosythmuseum.co.uk/",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7e/St_Osyth_Priory_-_geograph.org.uk_-_5576207.jpg",
-    imageAlt: "Historic ranges at St Osyth Priory, near the village museum",
-    imageCredit: "norman griffin",
-    imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/5576207",
     tips: [
       "Weekend-only in season — confirm on the museum site",
-      "No separate Commons photo of the museum rooms; the picture is the nearby Priory",
     ],
     tags: ["museum", "village", "heritage", "seasonal"],
   },
@@ -694,15 +680,8 @@ export const attractions: Attraction[] = [
     coords: { lat: 51.7895, lng: 1.1545 },
     officialUrl:
       "https://www.lovetoast.co.uk/blog/our-7th-store-opens-in-clacton-on-sea",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/2c/Pier_Avenue%2C_Clacton_-_geograph.org.uk_-_2961586.jpg",
-    imageAlt: "Pier Avenue, Clacton, where TOAST Coffee is located",
-    imageCredit: "Stacey Harris",
-    imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/2961586",
     tips: [
       "Confirm current hours on the TOAST site before a Sunday visit",
-      "Photo is Pier Avenue, not the café interior",
     ],
     tags: ["coffee", "brunch", "town"],
   },
@@ -720,15 +699,8 @@ export const attractions: Attraction[] = [
     location: "Atlanta Building, Kings Promenade, CO15 1FS",
     coords: { lat: 51.786, lng: 1.1555 },
     officialUrl: "https://thelounges.co.uk/martello/",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/1/11/Clacton-on-Sea%2C_Clacton_Pier_%284%29_-_geograph.org.uk_-_6417513.jpg",
-    imageAlt: "Clacton Pier and seafront beside Martello Lounge",
-    imageCredit: "Nigel Cox",
-    imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/6417513",
     tips: [
       "Confirm hours on the Lounge page — Friday and Saturday run later",
-      "Photo is the adjoining pier, not the café interior",
     ],
     tags: ["cafe", "seafront", "evening"],
   },
@@ -746,15 +718,8 @@ export const attractions: Attraction[] = [
     location: "34–36 Frinton Road, Holland-on-Sea, CO15 5UL",
     coords: { lat: 51.8035, lng: 1.1885 },
     officialUrl: "https://grandmalillys.co.uk/",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/0/07/Holland_on_Sea_Beach_Huts_-_geograph.org.uk_-_7490910.jpg",
-    imageAlt: "Holland-on-Sea beach huts, near Grandma Lilly's Tea Rooms",
-    imageCredit: "Glyn Baker",
-    imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/7490910",
     tips: [
       "Closed Monday and Sunday per the official site — confirm before you go",
-      "Photo is the Holland seafront, not the tea-room interior",
     ],
     tags: ["tea", "holland", "daytime"],
   },
@@ -772,15 +737,8 @@ export const attractions: Attraction[] = [
     location: "1–5 Pier Avenue, CO15 1QB",
     coords: { lat: 51.7875, lng: 1.155 },
     officialUrl: "https://charnallies.co.uk/",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pier_Avenue_in_Clacton_-_geograph.org.uk_-_5530218.jpg",
-    imageAlt: "Pier Avenue in Clacton, near Charnallies",
-    imageCredit: "Steve Daniels",
-    imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/5530218",
     tips: [
       "Check the official menu and hours before you book a large group",
-      "Photo is Pier Avenue, not the restaurant interior",
     ],
     tags: ["restaurant", "family", "dog-friendly"],
   },
@@ -931,11 +889,11 @@ export const attractions: Attraction[] = [
     coords: { lat: 51.8641, lng: 1.2877 },
     officialUrl: "https://www.essexwt.org.uk/nature-reserves/naze",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/8/8a/Naze_Cliffs%2C_Walton-on-the-Naze%2C_Essex_-_geograph.org.uk_-_3399527.jpg",
-    imageAlt: "Eroding Naze cliffs at Walton-on-the-Naze",
-    imageCredit: "Peter Pearson",
+      "https://upload.wikimedia.org/wikipedia/commons/c/ce/The_Naze_Visitor_Centre_-_geograph.org.uk_-_5386466.jpg",
+    imageAlt: "The Naze Visitor Centre, managed by Essex Wildlife Trust",
+    imageCredit: "Glyn Baker",
     imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/3399527",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/5386466",
     tips: [
       "Use the Crag Walk platform; do not dig the cliffs",
       "Pair with Naze Tower next door in season",
@@ -957,9 +915,19 @@ export function isCc0License(license?: string) {
   return Boolean(license?.toUpperCase().startsWith("CC0"));
 }
 
+export function hasAttractionPhoto(
+  attraction: Pick<Attraction, "image">,
+): attraction is Pick<Attraction, "image"> & { image: string } {
+  return Boolean(attraction.image);
+}
+
 /** CC BY / CC BY-SA (and similar) require visible credit; CC0 does not. */
 export function requiresImageAttribution(attraction: Attraction) {
-  return Boolean(attraction.imageCredit && !isCc0License(attraction.imageLicense));
+  return Boolean(
+    attraction.image &&
+      attraction.imageCredit &&
+      !isCc0License(attraction.imageLicense),
+  );
 }
 
 export function formatImageCredit(attraction: Attraction) {
@@ -989,6 +957,7 @@ export function displayAttractionImage(
   attraction: Pick<Attraction, "image">,
   width: CommonsThumbWidth = 960,
 ) {
+  if (!attraction.image) return "";
   const match = attraction.image.match(COMMONS_FILE);
   if (!match) return attraction.image;
   const [, dir, sub, filename] = match;

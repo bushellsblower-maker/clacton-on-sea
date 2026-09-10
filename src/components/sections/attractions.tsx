@@ -13,6 +13,7 @@ import {
 import {
   attractions,
   CATEGORIES,
+  hasAttractionPhoto,
   type Attraction,
   type AttractionCategory,
 } from "@/data/attractions";
@@ -128,24 +129,36 @@ export function AttractionsSection({
                   onClearFocus?.();
                 }}
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <AttractionPhoto attraction={a} />
-                  <PhotoCredit attraction={a} />
-                  <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
-                    <Badge variant="secondary" className="bg-bg-elevated/95">
-                      {a.category}
-                    </Badge>
-                    {a.featured && (
-                      <Badge className="bg-primary text-primary-fg">
-                        Featured
+                {hasAttractionPhoto(a) && (
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <AttractionPhoto attraction={a} />
+                    <PhotoCredit attraction={a} />
+                    <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
+                      <Badge variant="secondary" className="bg-bg-elevated/95">
+                        {a.category}
                       </Badge>
-                    )}
+                      {a.featured && (
+                        <Badge className="bg-primary text-primary-fg">
+                          Featured
+                        </Badge>
+                      )}
+                    </div>
                   </div>
-                </div>
+                )}
               </button>
               <CardContent className="space-y-3 p-4">
                 <div className="flex items-start justify-between gap-2">
                   <div>
+                    {!hasAttractionPhoto(a) && (
+                      <div className="mb-2 flex flex-wrap gap-1.5">
+                        <Badge variant="secondary">{a.category}</Badge>
+                        {a.featured && (
+                          <Badge className="bg-primary text-primary-fg">
+                            Featured
+                          </Badge>
+                        )}
+                      </div>
+                    )}
                     <h3 className="font-display text-lg font-semibold leading-snug">
                       {a.name}
                     </h3>
@@ -278,18 +291,31 @@ function AttractionDetail({
         className="max-h-[92dvh] w-full max-w-2xl overflow-y-auto rounded-t-2xl border border-border bg-bg-elevated shadow-lg sm:rounded-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative aspect-[21/9] sm:aspect-[2/1]">
-          <AttractionPhoto attraction={a} loading="eager" />
-          <PhotoCredit attraction={a} />
-          <button
-            type="button"
-            onClick={onClose}
-            className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-bg-elevated/95 text-fg shadow-sm"
-            aria-label="Close"
-          >
-            <X className="h-5 w-5" />
-          </button>
-        </div>
+        {hasAttractionPhoto(a) ? (
+          <div className="relative aspect-[21/9] sm:aspect-[2/1]">
+            <AttractionPhoto attraction={a} loading="eager" />
+            <PhotoCredit attraction={a} />
+            <button
+              type="button"
+              onClick={onClose}
+              className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-bg-elevated/95 text-fg shadow-sm"
+              aria-label="Close"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+        ) : (
+          <div className="flex items-center justify-end px-4 pt-4">
+            <button
+              type="button"
+              onClick={onClose}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-bg-subtle text-fg"
+              aria-label="Close"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+        )}
         <div className="space-y-5 p-5 sm:p-6">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>

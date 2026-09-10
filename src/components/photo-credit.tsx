@@ -1,5 +1,6 @@
 import {
   formatImageCredit,
+  hasAttractionPhoto,
   requiresImageAttribution,
   type Attraction,
 } from "@/data/attractions";
@@ -17,7 +18,9 @@ export function PhotoCredit({
   variant = "overlay",
   className,
 }: PhotoCreditProps) {
-  if (!requiresImageAttribution(attraction)) return null;
+  if (!hasAttractionPhoto(attraction) || !requiresImageAttribution(attraction)) {
+    return null;
+  }
 
   const label = `Photo: ${formatImageCredit(attraction)}`;
   const linked = Boolean(attraction.imageSourceUrl);
