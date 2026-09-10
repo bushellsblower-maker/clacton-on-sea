@@ -181,13 +181,13 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
                   type="button"
                   onClick={() => go(item.id)}
                   className={cn(
-                    "inline-flex h-9 min-w-0 flex-1 basis-[30%] items-center justify-center gap-1.5 rounded-full px-2.5 text-xs font-semibold transition-colors sm:flex-none sm:basis-auto sm:justify-start sm:px-3 sm:text-sm",
+                    "inline-flex h-9 min-w-0 flex-1 basis-[30%] items-center justify-center gap-1 rounded-full px-2 text-xs font-semibold transition-colors sm:flex-none sm:basis-auto sm:justify-start sm:gap-1.5 sm:px-3 sm:text-sm",
                     isActive
                       ? "bg-primary text-primary-fg"
                       : "bg-bg-elevated text-fg hover:bg-bg-elevated/80",
                   )}
                 >
-                  <Icon className="h-3.5 w-3.5 shrink-0" />
+                  <Icon className="hidden h-3.5 w-3.5 shrink-0 sm:inline" />
                   <span className="truncate sm:hidden">
                     {item.shortLabel ?? item.label}
                   </span>
