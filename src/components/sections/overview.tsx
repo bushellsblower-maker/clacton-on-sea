@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import {
+  attractions,
   displayAttractionImage,
   getAttractionById,
   getFeaturedAttractions,
@@ -23,7 +24,9 @@ import {
   formatEventDateRange,
   filterEvents,
 } from "@/data/events";
+import { itineraries } from "@/data/itineraries";
 import { quickFacts } from "@/data/practical";
+import { historyFacts } from "@/data/visitor-info";
 import type { SectionId } from "@/components/layout/shell";
 
 interface OverviewProps {
@@ -88,9 +91,9 @@ export function OverviewSection({
               Discover Clacton — pier, sands & Tendring coast
             </h1>
             <p className="max-w-xl text-base leading-relaxed text-fg-on-dark/75 sm:text-lg">
-              A modern guide to Clacton Pier, Holland-on-Sea, Jaywick, St Osyth
-              and a full year of live events. Plan your Essex sunshine-coast
-              escape in minutes.
+              A modern guide to Clacton Pier, Holland-on-Sea, Jaywick, St Osyth,
+              verified cafés and a full year of live events. Plan your Essex
+              sunshine-coast escape in minutes.
             </p>
             <div className="flex flex-wrap gap-3 pt-1">
               <Button
@@ -115,9 +118,9 @@ export function OverviewSection({
 
           <div className="grid grid-cols-2 gap-3 self-end">
             {[
-              { n: "12", l: "Hotspots" },
+              { n: String(attractions.length), l: "Hotspots" },
               { n: "Year-round", l: "Events calendar" },
-              { n: "4", l: "Ready itineraries" },
+              { n: String(itineraries.length), l: "Ready itineraries" },
               { n: "LST", l: "Direct from London" },
             ].map((stat) => (
               <div
@@ -158,6 +161,41 @@ export function OverviewSection({
             </CardContent>
           </Card>
         ))}
+      </section>
+
+      {/* History facts */}
+      <section className="min-w-0 space-y-4">
+        <div className="flex items-end justify-between gap-4">
+          <div className="min-w-0">
+            <p className="text-xs font-semibold uppercase tracking-wider text-accent">
+              Heritage
+            </p>
+            <h2 className="font-display text-2xl font-semibold tracking-tight">
+              Short history of the coast
+            </h2>
+          </div>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {historyFacts.slice(0, 6).map((fact) => (
+            <Card key={fact.id} className="min-w-0 border-border/80 shadow-none">
+              <CardContent className="space-y-2 p-4">
+                <p className="text-sm leading-relaxed text-fg">{fact.fact}</p>
+                <a
+                  href={fact.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-medium text-accent hover:underline"
+                >
+                  Source
+                </a>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        <p className="text-xs text-fg-subtle">
+          Six of {historyFacts.length} sourced facts — more sit with the
+          heritage hotspots and visitor-info notes.
+        </p>
       </section>
 
       {/* Featured hotspots */}
@@ -208,11 +246,16 @@ export function OverviewSection({
                   {a.tagline}
                 </p>
                 <div className="flex items-center gap-1 pt-1 text-xs text-fg-subtle">
-                  <Star className="h-3.5 w-3.5 fill-warn text-warn" />
-                  <span className="font-medium tabular-nums text-fg">
-                    {a.rating}
-                  </span>
-                  <span>· {a.price}</span>
+                  {a.rating != null && (
+                    <>
+                      <Star className="h-3.5 w-3.5 fill-warn text-warn" />
+                      <span className="font-medium tabular-nums text-fg">
+                        {a.rating}
+                      </span>
+                      <span>· </span>
+                    </>
+                  )}
+                  <span>{a.price}</span>
                 </div>
               </div>
             </button>
@@ -279,6 +322,29 @@ export function OverviewSection({
               </Card>
             );
           })}
+        </div>
+      </section>
+
+      {/* Watch-outs teaser */}
+      <section className="overflow-hidden rounded-2xl border border-border bg-warn-soft/40">
+        <div className="grid gap-4 p-6 sm:p-8 md:grid-cols-[1fr_auto] md:items-center">
+          <div className="min-w-0 space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-wider text-warn">
+              Before you go
+            </p>
+            <h2 className="font-display text-xl font-semibold tracking-tight">
+              Restricted reserves, dog bans, seasonal toilets and car-park locks
+            </h2>
+            <p className="max-w-lg text-sm text-fg-muted">
+              Colne Point is not a casual public walk. Tendring DC publishes
+              beach-safety flags, May–September dog maps, and night lock times
+              for Martello Coach & Car Park.
+            </p>
+          </div>
+          <Button variant="outline" onClick={() => onNavigate("practical")}>
+            Visitor watch-outs
+            <ArrowRight className="h-4 w-4" />
+          </Button>
         </div>
       </section>
 

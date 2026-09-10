@@ -3,6 +3,7 @@ import {
   Bookmark,
   BookmarkCheck,
   Clock,
+  ExternalLink,
   MapPin,
   Search,
   Star,
@@ -70,8 +71,9 @@ export function AttractionsSection({
           Places you'll remember
         </h1>
         <p className="max-w-2xl text-fg-muted">
-          From Clacton Pier to Holland-on-Sea, Jaywick, St Osyth Priory and
-          Colne Point — the Tendring coast in one guide.
+          Pier, Holland-on-Sea, Jaywick, St Osyth, inland woods and verified
+          cafés — plus Walton day-trip stops. Colne Point is listed under
+          visitor cautions, not as a casual hotspot.
         </p>
       </header>
 
@@ -163,12 +165,14 @@ export function AttractionsSection({
                   </Button>
                 </div>
                 <div className="flex flex-wrap gap-3 text-xs text-fg-subtle">
-                  <span className="inline-flex items-center gap-1">
-                    <Star className="h-3.5 w-3.5 fill-warn text-warn" />
-                    <span className="font-medium tabular-nums text-fg">
-                      {a.rating}
+                  {a.rating != null && (
+                    <span className="inline-flex items-center gap-1">
+                      <Star className="h-3.5 w-3.5 fill-warn text-warn" />
+                      <span className="font-medium tabular-nums text-fg">
+                        {a.rating}
+                      </span>
                     </span>
-                  </span>
+                  )}
                   <span className="inline-flex items-center gap-1">
                     <Clock className="h-3.5 w-3.5" />
                     {a.duration}
@@ -326,11 +330,17 @@ function AttractionDetail({
             {[
               { icon: Clock, label: "Duration", value: a.duration },
               { icon: Wallet, label: "Price", value: a.price },
-              {
-                icon: Star,
-                label: "Rating",
-                value: `${a.rating} (${a.reviews.toLocaleString()})`,
-              },
+              ...(a.rating != null
+                ? [
+                    {
+                      icon: Star,
+                      label: "Rating",
+                      value: a.reviews
+                        ? `${a.rating} (${a.reviews.toLocaleString()})`
+                        : String(a.rating),
+                    },
+                  ]
+                : []),
               { icon: MapPin, label: "Best time", value: a.bestTime },
             ].map((item) => (
               <div key={item.label} className="rounded-lg bg-bg-subtle p-3">
@@ -378,6 +388,18 @@ function AttractionDetail({
             <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
             <span>{a.location}</span>
           </div>
+
+          {a.officialUrl && (
+            <a
+              href={a.officialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
+            >
+              <ExternalLink className="h-4 w-4" />
+              Official site
+            </a>
+          )}
         </div>
       </div>
     </div>

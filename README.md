@@ -54,4 +54,7 @@ No Unsplash placeholders.
 - **Airshow 2026:** Thursday 27 & Friday 28 August, seafront; twilight display on the Thursday. Confirm at [clactonairshow.com](https://clactonairshow.com/).
 - **Carnival 2026:** Week from 7 August; street procession Saturday 8 August; Sunday show 9 August; run events 17 August. Confirm at [clactoncarnival.org](http://www.clactoncarnival.org/eventscw.htm).
 - **Shopping:** Use **Clacton Shopping Village** (Stephenson Road West), not “Factory Outlet”, in visitor-facing copy.
-- Clacton Pavilion is not given its own hotspot card (no modern CC photo).
+- Clacton Pavilion uses the adjoining pier photograph (no modern Commons photo of the Pavilion building).
+- **Colne Point** is listed under visitor cautions (restricted access), not as a casual hotspot.
+- **Research pack:** visitor facts, toilets, parking, cautions and links are derived from `docs/research` dated 2026-09-10. Confirm hours and fees before travel.
+- Food cards use related street or seafront Commons/Geograph photos with honest alt text — never Unsplash, never fake café interiors.
