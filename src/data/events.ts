@@ -555,7 +555,7 @@ function buildMonthlyMarkets(y: number): GuideEvent[] {
             title: "Clacton Town Market",
             category: "Markets",
             description:
-              "Stalls around the town centre — produce, household goods and a proper Essex natter. Dates can shift for Carnival and Airshow weekends.",
+              "Stalls around the town centre — produce, household goods and a proper Essex natter. Dates can shift on procession and flying-display weekends.",
             venue: "Town centre",
             location: "Pier Avenue / High Street area",
             startDate: format(d, "yyyy-MM-dd"),
