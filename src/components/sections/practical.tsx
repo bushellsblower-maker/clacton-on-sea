@@ -32,7 +32,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { LucideIcon } from "lucide-react";
-import type { SectionId } from "@/components/layout/shell";
+import { GUIDE_NAV, type SectionId } from "@/components/layout/sections";
 
 const ICONS: Record<string, LucideIcon> = {
   train: Train,
@@ -77,6 +77,25 @@ export function PracticalSection({
           and make the most of Clacton's beaches, Airshow and Carnival.
         </p>
       </header>
+
+      {onNavigate && (
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
+          {GUIDE_NAV.map((item) => {
+            const Icon = item.icon;
+            return (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => onNavigate(item.id)}
+                className="flex items-center gap-2 rounded-lg border border-border bg-bg-elevated px-3 py-2.5 text-left text-sm font-medium hover:bg-bg-subtle"
+              >
+                <Icon className="h-4 w-4 shrink-0 text-accent" />
+                <span className="leading-snug">{item.shortLabel ?? item.label}</span>
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       <div className="grid gap-4 sm:grid-cols-2">
         {practicalTips.map((tip) => {

@@ -4,7 +4,7 @@ import { getAttractionById } from "@/data/attractions";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import type { SectionId } from "@/components/layout/shell";
+import type { SectionId } from "@/components/layout/sections";
 
 interface ItinerariesProps {
   onOpenAttraction: (id: string) => void;
