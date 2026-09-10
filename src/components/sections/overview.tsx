@@ -28,6 +28,7 @@ import {
 } from "@/data/events";
 import { itineraries } from "@/data/itineraries";
 import { quickFacts } from "@/data/practical";
+import { HistoryFactCard } from "@/components/history-fact-card";
 import { historyFacts } from "@/data/visitor-info";
 import type { SectionId } from "@/components/layout/sections";
 
@@ -219,19 +220,12 @@ export function OverviewSection({
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {historyFacts.slice(0, 6).map((fact) => (
-            <Card key={fact.id} className="min-w-0 border-border/80 shadow-none">
-              <CardContent className="space-y-2 p-4">
-                <p className="text-sm leading-relaxed text-fg">{fact.fact}</p>
-                <a
-                  href={fact.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs font-medium text-accent hover:underline"
-                >
-                  Source
-                </a>
-              </CardContent>
-            </Card>
+            <HistoryFactCard
+              key={fact.id}
+              fact={fact.fact}
+              sourceUrl={fact.sourceUrl}
+              variant="plain"
+            />
           ))}
         </div>
         <Button variant="ghost" onClick={() => onNavigate("history")}>
