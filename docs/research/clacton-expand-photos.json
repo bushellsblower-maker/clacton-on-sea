@@ -1,0 +1,110 @@
+[
+  {
+    "id": "princes-theatre",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Clacton_Town_Hall_looking_south-west_%28geograph_5668500%29.jpg",
+    "license": "CC BY-SA 2.0",
+    "photographer": "Duncan Graham",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Clacton_Town_Hall_looking_south-west_(geograph_5668500).jpg",
+    "confidence": 0.72,
+    "note": "Exterior of Clacton Town Hall, which houses Princes Theatre (Geograph caption/context)."
+  },
+  {
+    "id": "clacton-museum",
+    "gap": true,
+    "reason": "No clear Commons/Geograph exterior of Clacton History Museum (library/West Clacton Library site); only unrelated spear/NHM or generic library shots."
+  },
+  {
+    "id": "hastys-adventure-farm",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Hasty%27s_Adventure_Farm_-_geograph.org.uk_-_7530397.jpg",
+    "license": "CC BY-SA 2.0",
+    "photographer": "Glyn Baker",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Hasty%27s_Adventure_Farm_-_geograph.org.uk_-_7530397.jpg",
+    "confidence": 0.95
+  },
+  {
+    "id": "holland-haven-country-park",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Holland_Haven_Country_Park_-_view_from_bird_hide_2.jpg",
+    "license": "CC BY-SA 4.0",
+    "photographer": "Dudley Miles",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Holland_Haven_Country_Park_-_view_from_bird_hide_2.jpg",
+    "confidence": 0.98
+  },
+  {
+    "id": "howlands-marsh",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Howlands_Marsh_SSSI_-_geograph.org.uk_-_666475.jpg",
+    "license": "CC BY-SA 2.0",
+    "photographer": "John Lemay",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Howlands_Marsh_SSSI_-_geograph.org.uk_-_666475.jpg",
+    "confidence": 0.95
+  },
+  {
+    "id": "great-holland-pits",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Great_Holland_Pits_-_geograph.org.uk_-_1336458.jpg",
+    "license": "CC BY-SA 2.0",
+    "photographer": "Glyn Baker",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Great_Holland_Pits_-_geograph.org.uk_-_1336458.jpg",
+    "confidence": 0.95
+  },
+  {
+    "id": "weeleyhall-wood",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Weeley_Hall_Wood_-_geograph.org.uk_-_1335020.jpg",
+    "license": "CC BY-SA 2.0",
+    "photographer": "Glyn Baker",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Weeley_Hall_Wood_-_geograph.org.uk_-_1335020.jpg",
+    "confidence": 0.95
+  },
+  {
+    "id": "naze-tower",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/The_Naze_Tower.jpg",
+    "license": "CC BY-SA 4.0",
+    "photographer": "Michael Coppins",
+    "page_url": "https://commons.wikimedia.org/wiki/File:The_Naze_Tower.jpg",
+    "confidence": 0.98
+  },
+  {
+    "id": "st-osyth-museum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Martello_Tower_at_Point_Clear_-_geograph.org.uk_-_743766.jpg",
+    "license": "CC BY-SA 2.0",
+    "photographer": "Oxyman",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Martello_Tower_at_Point_Clear_-_geograph.org.uk_-_743766.jpg",
+    "confidence": 0.88,
+    "note": "Point Clear Martello Tower housing East Essex Aviation Society Museum (St Osyth/Point Clear museum)."
+  },
+  {
+    "id": "roaring-donkey",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/%27The_Roaring_Donkey%27_public_house_-_geograph.org.uk_-_254496.jpg",
+    "license": "CC BY-SA 2.0",
+    "photographer": "Robert Edwards",
+    "page_url": "https://commons.wikimedia.org/wiki/File:%27The_Roaring_Donkey%27_public_house_-_geograph.org.uk_-_254496.jpg",
+    "confidence": 0.92,
+    "note": "Clear exterior of The Roaring Donkey, Holland-on-Sea (B1032)."
+  },
+  {
+    "id": "grandma-lillys",
+    "gap": true,
+    "reason": "no clear exterior of named place"
+  },
+  {
+    "id": "toast-coffee-clacton",
+    "gap": true,
+    "reason": "no clear exterior of named place"
+  },
+  {
+    "id": "martello-lounge",
+    "gap": true,
+    "reason": "no clear exterior of named place (Martello Tower photos are not the lounge chain)"
+  },
+  {
+    "id": "charnallies",
+    "gap": true,
+    "reason": "no clear exterior of named place"
+  },
+  {
+    "id": "clacton-airfield",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Clacton-on-Sea%2C_Clacton_Airfield_airstrip_%282%29_-_geograph.org.uk_-_5959307.jpg",
+    "license": "CC BY-SA 2.0",
+    "photographer": "Nigel Cox",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Clacton-on-Sea,_Clacton_Airfield_airstrip_(2)_-_geograph.org.uk_-_5959307.jpg",
+    "confidence": 0.95
+  }
+]
