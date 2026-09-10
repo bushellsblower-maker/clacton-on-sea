@@ -170,7 +170,7 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
         <div className="border-t border-border/70 bg-bg-subtle/70">
           <nav
             aria-label="Visitor guides"
-            className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 py-2 sm:px-6"
+            className="mx-auto flex max-w-7xl flex-wrap gap-2 px-4 py-2 sm:px-6"
           >
             {GUIDE_NAV.map((item) => {
               const Icon = item.icon;
@@ -181,14 +181,16 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
                   type="button"
                   onClick={() => go(item.id)}
                   className={cn(
-                    "inline-flex h-9 shrink-0 items-center gap-1.5 rounded-full px-3 text-xs font-semibold transition-colors sm:text-sm",
+                    "inline-flex h-9 min-w-0 flex-1 basis-[30%] items-center justify-center gap-1.5 rounded-full px-2.5 text-xs font-semibold transition-colors sm:flex-none sm:basis-auto sm:justify-start sm:px-3 sm:text-sm",
                     isActive
                       ? "bg-primary text-primary-fg"
                       : "bg-bg-elevated text-fg hover:bg-bg-elevated/80",
                   )}
                 >
-                  <Icon className="h-3.5 w-3.5" />
-                  <span className="sm:hidden">{item.shortLabel ?? item.label}</span>
+                  <Icon className="h-3.5 w-3.5 shrink-0" />
+                  <span className="truncate sm:hidden">
+                    {item.shortLabel ?? item.label}
+                  </span>
                   <span className="hidden sm:inline">{item.label}</span>
                 </button>
               );
