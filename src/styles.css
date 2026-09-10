@@ -54,6 +54,8 @@
   }
 
   html {
+    /* 18px when the browser default is 16px — modest sitewide rem bump */
+    font-size: 112.5%;
     scroll-behavior: smooth;
     overflow-x: hidden;
   }
