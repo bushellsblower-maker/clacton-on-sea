@@ -121,15 +121,15 @@ export function AttractionsSection({
                 selected?.id === a.id && "ring-2 ring-ring",
               )}
             >
-              <button
-                type="button"
-                className="block w-full text-left"
-                onClick={() => {
-                  setSelected(a);
-                  onClearFocus?.();
-                }}
-              >
-                {hasAttractionPhoto(a) && (
+              {hasAttractionPhoto(a) && (
+                <button
+                  type="button"
+                  className="block w-full text-left"
+                  onClick={() => {
+                    setSelected(a);
+                    onClearFocus?.();
+                  }}
+                >
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <AttractionPhoto attraction={a} />
                     <PhotoCredit attraction={a} />
@@ -144,11 +144,18 @@ export function AttractionsSection({
                       )}
                     </div>
                   </div>
-                )}
-              </button>
+                </button>
+              )}
               <CardContent className="space-y-3 p-4">
                 <div className="flex items-start justify-between gap-2">
-                  <div>
+                  <button
+                    type="button"
+                    className="min-w-0 flex-1 text-left"
+                    onClick={() => {
+                      setSelected(a);
+                      onClearFocus?.();
+                    }}
+                  >
                     {!hasAttractionPhoto(a) && (
                       <div className="mb-2 flex flex-wrap gap-1.5">
                         <Badge variant="secondary">{a.category}</Badge>
@@ -163,7 +170,7 @@ export function AttractionsSection({
                       {a.name}
                     </h3>
                     <p className="text-sm text-fg-muted">{a.tagline}</p>
-                  </div>
+                  </button>
                   <Button
                     variant="ghost"
                     size="icon-sm"
