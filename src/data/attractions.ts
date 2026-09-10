@@ -476,12 +476,6 @@ export const attractions: Attraction[] = [
     location: "2nd Floor, Clacton Library, 96 Station Road, CO15 1SF",
     coords: { lat: 51.7912, lng: 1.153 },
     officialUrl: "https://discoverclacton.co.uk/place/clacton-museum/",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3d/Clacton_Library_-_geograph.org.uk_-_7615136.jpg",
-    imageAlt: "Clacton Library, home of Clacton Museum on the second floor",
-    imageCredit: "Glyn Baker",
-    imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/7615136",
     tips: [
       "Hours are very limited — confirm on Discover Clacton before you climb the stairs",
       "Pair with Princes Theatre next door in Town Hall",
@@ -610,6 +604,33 @@ export const attractions: Attraction[] = [
       "Weekend-only in season — confirm on the museum site",
     ],
     tags: ["museum", "village", "heritage", "seasonal"],
+  },
+  {
+    id: "east-essex-aviation-museum",
+    name: "East Essex Aviation Society & Museum",
+    category: "Heritage",
+    tagline: "WWII aviation museum in the Point Clear Martello",
+    description:
+      "In Point Clear Martello Tower since 1986; displays include remains of a USAAF P-51 Mustang ditched off Clacton on 13 January 1945. Typical hours at research time: April–October Sundays 10:00–14:00; June–September also Wednesdays 10:00–14:00. Donation entry — confirm hours before you go.",
+    highlights: ["Martello setting", "P-51 display", "Donation entry"],
+    duration: "45–90 mins",
+    bestTime: "Sunday mornings in season; confirm before travel",
+    price: "Donations — confirm opening",
+    location: "Martello Tower, Point Clear, CO16 8LW",
+    coords: { lat: 51.783, lng: 1.055 },
+    officialUrl: "http://www.eastessexaviationsociety.org/",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Martello_Tower_at_Point_Clear_-_geograph.org.uk_-_743766.jpg",
+    imageAlt:
+      "Martello Tower at Point Clear, housing the East Essex Aviation Society Museum",
+    imageCredit: "Oxyman",
+    imageLicense: "CC BY-SA 2.0",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/743766",
+    tips: [
+      "Hours are seasonal and were listed as typical at research time — confirm on the society site or social pages",
+      "This is the Point Clear Martello, not the village museum at the Education Centre",
+    ],
+    tags: ["museum", "heritage", "point-clear"],
   },
   {
     id: "naze-tower",
@@ -811,11 +832,11 @@ export const attractions: Attraction[] = [
     coords: { lat: 51.805, lng: 1.055 },
     officialUrl: "https://www.essexwt.org.uk/nature-reserves/howlands-marsh",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/54/Howlands_Marsh_Reserve_-_geograph.org.uk_-_1356488.jpg",
-    imageAlt: "Grazing marsh at Howlands Marsh nature reserve",
-    imageCredit: "Glyn Baker",
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/Howlands_Marsh_SSSI_-_geograph.org.uk_-_666475.jpg",
+    imageAlt: "Howlands Marsh SSSI",
+    imageCredit: "John Lemay",
     imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/1356488",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/666475",
     tips: [
       "Dogs on the public footpath only, on leads",
       "Tiny lay-by — do not block the B1027",
@@ -837,11 +858,11 @@ export const attractions: Attraction[] = [
     coords: { lat: 51.82, lng: 1.205 },
     officialUrl: "https://www.essexwt.org.uk/nature-reserves/great-holland-pits",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/b/b9/A_Great_Holland_Pits_Scene_-_geograph.org.uk_-_7581008.jpg",
-    imageAlt: "Woodland and water at Great Holland Pits",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5f/Great_Holland_Pits_-_geograph.org.uk_-_1336458.jpg",
+    imageAlt: "Great Holland Pits",
     imageCredit: "Glyn Baker",
     imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/7581008",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/1336458",
     tips: [
       "Use the reserve car park — not Mill Lane",
       "Handy if you are based near Little Clacton or Weeley Heath",
@@ -863,11 +884,11 @@ export const attractions: Attraction[] = [
     coords: { lat: 51.855, lng: 1.135 },
     officialUrl: "https://www.essexwt.org.uk/nature-reserves/weeleyhall-wood",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/c/c5/Path_in_Weeleyhall_Wood_-_geograph.org.uk_-_3623710.jpg",
-    imageAlt: "Path through Weeleyhall Wood",
-    imageCredit: "Roger Jones",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Weeley_Hall_Wood_-_geograph.org.uk_-_1335020.jpg",
+    imageAlt: "Weeley Hall Wood",
+    imageCredit: "Glyn Baker",
     imageLicense: "CC BY-SA 2.0",
-    imageSourceUrl: "https://www.geograph.org.uk/photo/3623710",
+    imageSourceUrl: "https://www.geograph.org.uk/photo/1335020",
     tips: [
       "Park in front of Weeley Church and walk Church Lane — do not block residents",
       "Leave dogs at home from 1 March to 1 July",

@@ -127,6 +127,13 @@ export const itineraries: Itinerary[] = [
       },
       {
         time: "15:00",
+        title: "East Essex Aviation Museum (if open)",
+        detail:
+          "Point Clear Martello since 1986. Seasonal Sunday (and some Wednesday) mornings — confirm on the society site before you go.",
+        attractionId: "east-essex-aviation-museum",
+      },
+      {
+        time: "15:45",
         title: "Point Clear Beach",
         detail: "Estuary sand and sailing-club masts — a different sea from the pier.",
         attractionId: "st-osyth-beach",

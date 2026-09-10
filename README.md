@@ -44,9 +44,9 @@ After the first deploy, confirm the custom hostname in the Cloudflare dashboard 
 
 ## Photos
 
-Attraction photos are the verified Wikimedia / Geograph URLs listed in `src/data/attractions.ts`. Each card stores `imageCredit`, `imageLicense` and `imageSourceUrl`. Credits appear on photos, in the footer, and (where required by the licence) as links.
+Attraction photos are Wikimedia Commons / Geograph files (CC BY / CC BY-SA). Each card stores `imageCredit`, `imageLicense` and `imageSourceUrl`. Credits appear on photos, in the footer, and (where required by the licence) as links.
 
-No Unsplash placeholders.
+Exact URLs for the 2026-09-10 expand set are in `docs/research/clacton-expand-photos.json`. No Unsplash placeholders.
 
 ## Content notes
 
@@ -54,8 +54,7 @@ No Unsplash placeholders.
 - **Airshow 2026:** Thursday 27 & Friday 28 August, seafront; twilight display on the Thursday. Confirm at [clactonairshow.com](https://clactonairshow.com/).
 - **Carnival 2026:** Week from 7 August; street procession Saturday 8 August; Sunday show 9 August; run events 17 August. Confirm at [clactoncarnival.org](http://www.clactoncarnival.org/eventscw.htm).
 - **Shopping:** Use **Clacton Shopping Village** (Stephenson Road West), not “Factory Outlet”, in visitor-facing copy.
-- Cards without a Commons/Geograph photo of the named place have no hero image (TOAST, Martello Lounge, Grandma Lilly's, Charnallies, Clacton Pavilion, St Osyth Museum).
-- The Roaring Donkey uses a Geograph exterior of that pub. Hasty's, Naze Visitor Centre, Town Hall / Princes Theatre and the nature sites use named Commons/Geograph files.
+- Cards without a CC exterior of the named premises have **no hero image**: Clacton Museum, Grandma Lilly’s, TOAST Coffee, Martello Lounge, Charnallie’s, Clacton Pavilion, and St Osyth village museum.
+- The Point Clear Martello photo (Oxyman, Geograph 743766) is on the East Essex Aviation Society & Museum card — that is the building that houses the museum, not the village museum at the Education Centre.
 - **Colne Point** is listed under visitor cautions (restricted access), not as a casual hotspot.
 - **Research pack:** visitor facts, toilets, parking, cautions and links are derived from `docs/research` dated 2026-09-10. Confirm hours and fees before travel.
-- Food cards use related street or seafront Commons/Geograph photos with honest alt text — never Unsplash, never fake café interiors.
