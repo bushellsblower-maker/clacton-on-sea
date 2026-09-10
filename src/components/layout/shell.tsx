@@ -1,11 +1,16 @@
 import { useState } from "react";
 import {
   CalendarDays,
+  Car,
   Compass,
+  ExternalLink,
+  Home,
   Info,
+  Landmark,
   Map,
   Menu,
   Route,
+  ShieldAlert,
   Waves,
   X,
   Bookmark,
@@ -19,15 +24,35 @@ import {
 } from "@/data/attractions";
 import { researchAttribution } from "@/data/visitor-info";
 
-export type SectionId =
-  | "overview"
-  | "attractions"
-  | "events"
-  | "itineraries"
-  | "practical"
-  | "saved";
+export const SECTION_IDS = [
+  "overview",
+  "attractions",
+  "events",
+  "itineraries",
+  "practical",
+  "saved",
+  "car-parks",
+  "history",
+  "access-restrictions",
+  "near-barnfields",
+  "official-links",
+] as const;
 
-const NAV: { id: SectionId; label: string; icon: typeof Compass }[] = [
+export type SectionId = (typeof SECTION_IDS)[number];
+
+export function isSectionId(value: string): value is SectionId {
+  return (SECTION_IDS as readonly string[]).includes(value);
+}
+
+type NavItem = {
+  id: SectionId;
+  label: string;
+  shortLabel?: string;
+  blurb?: string;
+  icon: typeof Compass;
+};
+
+const PRIMARY_NAV: NavItem[] = [
   { id: "overview", label: "Overview", icon: Compass },
   { id: "attractions", label: "Hotspots", icon: Map },
   { id: "events", label: "Events", icon: CalendarDays },
@@ -35,6 +60,45 @@ const NAV: { id: SectionId; label: string; icon: typeof Compass }[] = [
   { id: "practical", label: "Visitor info", icon: Info },
   { id: "saved", label: "Saved", icon: Bookmark },
 ];
+
+export const GUIDE_NAV: NavItem[] = [
+  {
+    id: "car-parks",
+    label: "Car parks & toilets",
+    shortLabel: "Parks & loos",
+    blurb: "TDC loos, Changing Places and Mi Permit parks",
+    icon: Car,
+  },
+  {
+    id: "history",
+    label: "History",
+    shortLabel: "History",
+    blurb: "Pier, Martello, Priory and sourced facts",
+    icon: Landmark,
+  },
+  {
+    id: "access-restrictions",
+    label: "Access restrictions",
+    shortLabel: "Access",
+    blurb: "Sourced watch-outs and beach cautions",
+    icon: ShieldAlert,
+  },
+  {
+    id: "near-barnfields",
+    label: "Near Barnfields",
+    shortLabel: "Barnfields",
+    blurb: "Walks and day trips from CO16 9EF",
+    icon: Home,
+  },
+  {
+    id: "official-links",
+    label: "Official links & videos",
+    shortLabel: "Links & videos",
+    blurb: "Council, venues and verified YouTube",
+    icon: ExternalLink,
+  },
+];
+
 
 interface ShellProps {
   active: SectionId;
@@ -76,8 +140,8 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
             </span>
           </button>
 
-          <nav className="hidden items-center gap-1 lg:flex">
-            {NAV.map((item) => {
+          <nav className="hidden items-center gap-1 xl:flex">
+            {PRIMARY_NAV.map((item) => {
               const Icon = item.icon;
               const isActive = active === item.id;
               return (
@@ -124,7 +188,7 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
             <Button
               variant="outline"
               size="icon"
-              className="lg:hidden"
+              className="xl:hidden"
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Close menu" : "Open menu"}
             >
@@ -134,9 +198,12 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
         </div>
 
         {open && (
-          <div className="border-t border-border bg-bg-elevated px-4 py-3 lg:hidden">
+          <div className="border-t border-border bg-bg-elevated px-4 py-3 xl:hidden">
             <nav className="mx-auto flex max-w-7xl flex-col gap-1">
-              {NAV.map((item) => {
+              <p className="px-3 pb-1 pt-1 text-[11px] font-semibold uppercase tracking-wider text-fg-subtle">
+                Explore
+              </p>
+              {PRIMARY_NAV.map((item) => {
                 const Icon = item.icon;
                 const isActive = active === item.id;
                 return (
@@ -161,9 +228,61 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
                   </button>
                 );
               })}
+              <p className="px-3 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-fg-subtle">
+                Visitor guides
+              </p>
+              {GUIDE_NAV.map((item) => {
+                const Icon = item.icon;
+                const isActive = active === item.id;
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => go(item.id)}
+                    className={cn(
+                      "flex h-12 items-center gap-3 rounded-lg px-3 text-left text-sm font-medium transition-colors",
+                      isActive
+                        ? "bg-primary text-primary-fg"
+                        : "text-fg hover:bg-bg-subtle",
+                    )}
+                  >
+                    <Icon className="h-5 w-5 shrink-0" />
+                    {item.label}
+                  </button>
+                );
+              })}
             </nav>
           </div>
         )}
+
+        <div className="border-t border-border/70 bg-bg-subtle/70">
+          <nav
+            aria-label="Visitor guides"
+            className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 py-2 sm:px-6"
+          >
+            {GUIDE_NAV.map((item) => {
+              const Icon = item.icon;
+              const isActive = active === item.id;
+              return (
+                <button
+                  key={item.id}
+                  type="button"
+                  onClick={() => go(item.id)}
+                  className={cn(
+                    "inline-flex h-9 shrink-0 items-center gap-1.5 rounded-full px-3 text-xs font-semibold transition-colors sm:text-sm",
+                    isActive
+                      ? "bg-primary text-primary-fg"
+                      : "bg-bg-elevated text-fg hover:bg-bg-elevated/80",
+                  )}
+                >
+                  <Icon className="h-3.5 w-3.5" />
+                  <span className="sm:hidden">{item.shortLabel ?? item.label}</span>
+                  <span className="hidden sm:inline">{item.label}</span>
+                </button>
+              );
+            })}
+          </nav>
+        </div>
       </header>
 
       <main className="mx-auto min-w-0 max-w-7xl px-4 py-6 sm:px-6 sm:py-8">
@@ -171,7 +290,7 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
       </main>
 
       <footer className="mt-8 border-t border-border bg-bg-inverse text-fg-on-dark">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="mb-3 flex items-center gap-2">
               <Waves className="h-5 w-5 text-accent" />
@@ -187,7 +306,25 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
               Explore
             </p>
             <ul className="space-y-2 text-sm text-fg-on-dark/80">
-              {NAV.slice(0, 4).map((n) => (
+              {PRIMARY_NAV.slice(0, 4).map((n) => (
+                <li key={n.id}>
+                  <button
+                    type="button"
+                    onClick={() => go(n.id)}
+                    className="hover:text-fg-on-dark"
+                  >
+                    {n.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-fg-on-dark/50">
+              Visitor guides
+            </p>
+            <ul className="space-y-2 text-sm text-fg-on-dark/80">
+              {GUIDE_NAV.map((n) => (
                 <li key={n.id}>
                   <button
                     type="button"

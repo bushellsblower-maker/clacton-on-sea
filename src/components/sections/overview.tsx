@@ -6,6 +6,8 @@ import {
   Star,
   Sun,
 } from "lucide-react";
+import { WeatherForecast } from "@/components/weather-forecast";
+import { GUIDE_NAV } from "@/components/layout/shell";
 import { format } from "date-fns";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -147,6 +149,46 @@ export function OverviewSection({
         )}
       </section>
 
+      <WeatherForecast />
+
+      <section className="min-w-0 space-y-3">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wider text-accent">
+            Jump to
+          </p>
+          <h2 className="font-display text-2xl font-semibold tracking-tight">
+            Quick access
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-5">
+          {GUIDE_NAV.map((item) => {
+            const Icon = item.icon;
+            return (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => onNavigate(item.id)}
+                className="flex min-h-20 items-start gap-3 rounded-xl border border-border bg-bg-elevated p-4 text-left shadow-sm transition-shadow hover:shadow-md sm:min-h-24 sm:flex-col"
+              >
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-soft text-accent">
+                  <Icon className="h-5 w-5" />
+                </span>
+                <span className="min-w-0">
+                  <span className="block font-display text-sm font-semibold leading-snug sm:text-base">
+                    {item.label}
+                  </span>
+                  {item.blurb && (
+                    <span className="mt-1 block text-xs leading-snug text-fg-muted">
+                      {item.blurb}
+                    </span>
+                  )}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
       {/* Quick facts strip */}
       <section className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
         {quickFacts.map((f) => (
@@ -192,10 +234,10 @@ export function OverviewSection({
             </Card>
           ))}
         </div>
-        <p className="text-xs text-fg-subtle">
-          Six of {historyFacts.length} sourced facts — more sit with the
-          heritage hotspots and visitor-info notes.
-        </p>
+        <Button variant="ghost" onClick={() => onNavigate("history")}>
+          Full history page
+          <ArrowRight className="h-4 w-4" />
+        </Button>
       </section>
 
       {/* Featured hotspots */}
@@ -341,8 +383,11 @@ export function OverviewSection({
               for Martello Coach & Car Park.
             </p>
           </div>
-          <Button variant="outline" onClick={() => onNavigate("practical")}>
-            Visitor watch-outs
+          <Button
+            variant="outline"
+            onClick={() => onNavigate("access-restrictions")}
+          >
+            Access restrictions
             <ArrowRight className="h-4 w-4" />
           </Button>
         </div>
