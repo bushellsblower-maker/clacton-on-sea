@@ -32,6 +32,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { LucideIcon } from "lucide-react";
+import { HistoryFactCard } from "@/components/history-fact-card";
 import { GUIDE_NAV, type SectionId } from "@/components/layout/sections";
 
 const ICONS: Record<string, LucideIcon> = {
@@ -345,25 +346,12 @@ export function PracticalSection({
         <ol className="grid gap-3 sm:grid-cols-2">
           {historyFacts.map((fact, i) => (
             <li key={fact.id}>
-              <Card className="h-full shadow-none">
-                <CardContent className="flex gap-3 p-4">
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-semibold text-primary-fg tabular-nums">
-                    {i + 1}
-                  </span>
-                  <div className="min-w-0 space-y-1.5">
-                    <p className="text-sm leading-relaxed">{fact.fact}</p>
-                    <a
-                      href={fact.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-xs font-medium text-accent hover:underline"
-                    >
-                      Source
-                      <ExternalLink className="h-3 w-3" />
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
+              <HistoryFactCard
+                fact={fact.fact}
+                sourceUrl={fact.sourceUrl}
+                index={i + 1}
+                variant="numbered"
+              />
             </li>
           ))}
         </ol>

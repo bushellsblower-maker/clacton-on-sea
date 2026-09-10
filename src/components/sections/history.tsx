@@ -1,6 +1,6 @@
 import { Landmark } from "lucide-react";
 import { FacilityCard } from "@/components/facility-card";
-import { Card, CardContent } from "@/components/ui/card";
+import { HistoryFactCard } from "@/components/history-fact-card";
 import { heritagePlaces, historyFacts } from "@/data/visitor-guides";
 
 interface HistoryProps {
@@ -20,7 +20,7 @@ export function HistorySection({ onOpenAttraction }: HistoryProps) {
         <p className="max-w-2xl text-fg-muted">
           Sourced facts from the research pack — pier, Peter Bruff&apos;s planned
           resort, Martello towers, St Osyth Priory and the 1931 Princes Theatre.
-          Each fact links to its source.
+          Tap a fact to open its source.
         </p>
       </header>
 
@@ -36,24 +36,12 @@ export function HistorySection({ onOpenAttraction }: HistoryProps) {
         <ol className="grid gap-3">
           {historyFacts.map((item, index) => (
             <li key={item.id}>
-              <Card className="shadow-none">
-                <CardContent className="flex gap-4 p-5">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-bg-subtle font-display text-sm font-semibold tabular-nums text-fg">
-                    {index + 1}
-                  </span>
-                  <div className="min-w-0">
-                    <p className="text-sm leading-relaxed text-fg">{item.fact}</p>
-                    <a
-                      href={item.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-2 inline-block text-xs font-medium text-accent underline-offset-2 hover:underline"
-                    >
-                      Source
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
+              <HistoryFactCard
+                fact={item.fact}
+                sourceUrl={item.sourceUrl}
+                index={index + 1}
+                variant="timeline"
+              />
             </li>
           ))}
         </ol>

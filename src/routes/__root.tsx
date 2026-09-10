@@ -1,4 +1,5 @@
 import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
+import { DisableCopy } from "@/components/disable-copy";
 import { AuthProvider } from "@/lib/auth/provider";
 import appCss from "../styles.css?url";
 
@@ -32,6 +33,7 @@ function RootDocument() {
         <HeadContent />
       </head>
       <body>
+        <DisableCopy />
         <AuthProvider>
           <Outlet />
         </AuthProvider>
