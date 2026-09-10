@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "clacton",
+  "account_id": "f027194dcc0be7e3812e673468bab58d",
+  "compatibility_date": "2026-09-03",
+  "compatibility_flags": ["nodejs_compat", "nodejs_compat_populate_process_env"],
+  "main": "@tanstack/react-start/server-entry",
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "routes": [{ "pattern": "clacton.cybush.uk/*", "zone_name": "cybush.uk" }],
+  "vars": { "CLOUDFLARE_WORKER": "1" }
+}
