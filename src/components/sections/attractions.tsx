@@ -70,8 +70,8 @@ export function AttractionsSection({
           Places you'll remember
         </h1>
         <p className="max-w-2xl text-fg-muted">
-          From Beachy Head to the Pier, Towner to Sovereign Harbour — every
-          signature Eastbourne experience in one guide.
+          From Clacton Pier to Holland-on-Sea, Jaywick, St Osyth Priory and
+          Colne Point — the Tendring coast in one guide.
         </p>
       </header>
 

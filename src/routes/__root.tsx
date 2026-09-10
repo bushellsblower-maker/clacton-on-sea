@@ -11,12 +11,12 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "Eastbourne Guide — Tourist Dashboard",
+        title: "Clacton-on-Sea Guide — Tendring coast",
       },
       {
         name: "description",
         content:
-          "Modern tourist guide for Eastbourne, UK. Hotspots, year-round live events, itineraries and visitor tips for Beachy Head, the Pier and the South Downs.",
+          "Visitor guide for Clacton-on-Sea and the Tendring coast: pier, Holland-on-Sea, Jaywick, St Osyth, Airshow, Carnival, itineraries and practical tips.",
       },
       { name: "theme-color", content: "#0b1c2c" },
     ],

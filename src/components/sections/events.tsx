@@ -91,8 +91,8 @@ export function EventsSection() {
           What's on — all year round
         </h1>
         <p className="max-w-2xl text-fg-muted">
-          Search and filter Eastbourne's year-long programme: Airbourne,
-          international tennis, Bandstand concerts, markets, theatre and more.
+          Search and filter Clacton's year-long programme: Airshow, Carnival,
+          pier fireworks, Pirates Ahoy, FEAR, markets and theatre.
           Dates update relative to today (
           {format(today, "d MMMM yyyy")}).
         </p>

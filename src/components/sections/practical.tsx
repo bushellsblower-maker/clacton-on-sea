@@ -34,8 +34,8 @@ export function PracticalSection() {
           Plan the practical bits
         </h1>
         <p className="max-w-2xl text-fg-muted">
-          How to arrive, get around, stay safe on the cliffs and make the most
-          of Eastbourne's famous sunshine.
+          How to arrive from Liverpool Street, get around the Tendring coast,
+          and make the most of Clacton's beaches, Airshow and Carnival.
         </p>
       </header>
 
@@ -69,19 +69,19 @@ export function PracticalSection() {
             <ul className="mt-3 space-y-2 text-sm text-fg-on-dark/80">
               <li>
                 <span className="font-medium text-fg-on-dark">Spring</span> —
-                wildflowers, quieter cliffs
+                quieter sands, Colne Point birds
               </li>
               <li>
                 <span className="font-medium text-fg-on-dark">Summer</span> —
-                Bandstand, beaches, Airbourne
+                pier, Carnival, Airshow
               </li>
               <li>
                 <span className="font-medium text-fg-on-dark">Autumn</span> —
-                heritage days, soft light walks
+                Oktoberfest, FEAR, soft light walks
               </li>
               <li>
                 <span className="font-medium text-fg-on-dark">Winter</span> —
-                markets, theatre, stormy seas
+                grotto, theatre, stormy North Sea
               </li>
             </ul>
           </div>
@@ -90,9 +90,9 @@ export function PracticalSection() {
               Packing essentials
             </p>
             <ul className="mt-3 space-y-2 text-sm text-fg-on-dark/80">
-              <li>Windproof layer for Beachy Head</li>
-              <li>Sturdy shoes for chalk paths</li>
-              <li>Sunscreen — yes, even in Sussex</li>
+              <li>Windproof layer for the pier and sea wall</li>
+              <li>Sturdy shoes for Colne Point shingle</li>
+              <li>Sunscreen — yes, even in Essex</li>
               <li>Reusable bottle & picnic kit</li>
             </ul>
           </div>
@@ -101,9 +101,9 @@ export function PracticalSection() {
               Useful contacts
             </p>
             <ul className="mt-3 space-y-2 text-sm text-fg-on-dark/80">
-              <li>Tourist info: visiteastbourne.com</li>
-              <li>National Rail enquiries for trains</li>
-              <li>Tide times: check before Birling Gap</li>
+              <li>Airshow: clactonairshow.com</li>
+              <li>Pier events: clactonpier.co.uk</li>
+              <li>Trains: Greater Anglia · Liverpool Street</li>
               <li>Emergency: 999 · NHS 111</li>
             </ul>
           </div>

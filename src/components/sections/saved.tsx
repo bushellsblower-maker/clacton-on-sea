@@ -41,7 +41,7 @@ export function SavedSection({ onNavigate, onOpenAttraction }: SavedProps) {
         </h1>
         <p className="max-w-2xl text-fg-muted">
           Bookmarks stay on this device so you can build your personal
-          Eastbourne shortlist as you explore.
+          Clacton shortlist as you explore.
         </p>
       </header>
 

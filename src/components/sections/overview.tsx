@@ -50,7 +50,7 @@ export function OverviewSection({
   ).slice(0, 4);
   const liveNow = allEvents.filter((e) => eventStatus(e, today) === "live");
   const featured = getFeaturedAttractions().slice(0, 4);
-  const heroAttraction = getAttractionById("beachy-head");
+  const heroAttraction = getAttractionById("clacton-pier");
 
   return (
     <div className="min-w-0 space-y-10">
@@ -72,7 +72,7 @@ export function OverviewSection({
             <div className="flex flex-wrap items-center gap-2">
               <Badge className="border-0 bg-accent/20 text-fg-on-dark">
                 <Sun className="mr-1 h-3 w-3" />
-                UK's sunniest town
+                Essex Sunshine Coast
               </Badge>
               <Badge className="border-0 bg-white/10 text-fg-on-dark">
                 {format(today, "EEE d MMM yyyy")}
@@ -85,12 +85,12 @@ export function OverviewSection({
               )}
             </div>
             <h1 className="font-display text-3xl font-semibold leading-[1.1] tracking-tight text-balance sm:text-4xl lg:text-5xl">
-              Discover Eastbourne — cliffs, culture & coast
+              Discover Clacton — pier, sands & Tendring coast
             </h1>
             <p className="max-w-xl text-base leading-relaxed text-fg-on-dark/75 sm:text-lg">
-              A bold, modern guide to Beachy Head, the Seven Sisters, Victorian
-              seafront gems and a full year of live events. Plan your perfect
-              Sussex escape in minutes.
+              A modern guide to Clacton Pier, Holland-on-Sea, Jaywick, St Osyth
+              and a full year of live events. Plan your Essex sunshine-coast
+              escape in minutes.
             </p>
             <div className="flex flex-wrap gap-3 pt-1">
               <Button
@@ -115,10 +115,10 @@ export function OverviewSection({
 
           <div className="grid grid-cols-2 gap-3 self-end">
             {[
-              { n: "16+", l: "Hotspots" },
+              { n: "12", l: "Hotspots" },
               { n: "Year-round", l: "Events calendar" },
               { n: "4", l: "Ready itineraries" },
-              { n: "3 mi", l: "Palm promenade" },
+              { n: "LST", l: "Direct from London" },
             ].map((stat) => (
               <div
                 key={stat.l}
@@ -228,7 +228,7 @@ export function OverviewSection({
               Live calendar
             </p>
             <h2 className="font-display text-2xl font-semibold tracking-tight">
-              Coming up in Eastbourne
+              Coming up in Clacton
             </h2>
           </div>
           <Button
@@ -296,7 +296,7 @@ export function OverviewSection({
               Not sure where to start? Grab an itinerary
             </h2>
             <p className="max-w-lg text-sm text-fg-muted">
-              From cliff walks to culture days and family weekends — follow a
+              From pier days to Jaywick walks and family weekends — follow a
               curated route or save spots as you browse.
             </p>
           </div>

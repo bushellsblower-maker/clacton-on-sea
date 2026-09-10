@@ -67,10 +67,10 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
             </span>
             <span className="min-w-0 leading-tight">
               <span className="block truncate font-display text-sm font-semibold tracking-tight text-fg sm:text-base">
-                Eastbourne Guide
+                Clacton-on-Sea
               </span>
               <span className="hidden text-xs text-fg-muted sm:block">
-                UK's sunniest seaside
+                Tendring sunshine coast
               </span>
             </span>
           </button>
@@ -174,11 +174,11 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
           <div>
             <div className="mb-3 flex items-center gap-2">
               <Waves className="h-5 w-5 text-accent" />
-              <span className="font-display font-semibold">Eastbourne Guide</span>
+              <span className="font-display font-semibold">Clacton-on-Sea</span>
             </div>
             <p className="text-sm leading-relaxed text-fg-on-dark/70">
-              Your modern companion for chalk cliffs, Victorian seafront,
-              year-round events and the South Downs — all in one place.
+              A modern companion for the pier, Holland-on-Sea, Jaywick, St Osyth
+              and a full year of Tendring coast events — all in one place.
             </p>
           </div>
           <div>
@@ -235,7 +235,7 @@ export function Shell({ active, onNavigate, children }: ShellProps) {
               ))}
             </ul>
             <p className="pt-1 text-xs text-fg-on-dark/50">
-              Built for travellers · Eastbourne, East Sussex, England
+              Built for travellers · Clacton-on-Sea, Tendring, Essex
             </p>
           </div>
         </div>
